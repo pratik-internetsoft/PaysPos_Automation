@@ -66,7 +66,7 @@ public class Listeners extends Screenshot implements ITestListener{
 	                 // Save to file and attach to Extent Reports
 	                 String screenshotPath = saveScreenshotToFile(driver, result.getMethod().getMethodName());
 	                 test.addScreenCaptureFromPath(screenshotPath);
-	                 captureLogcatAndAttachToAllure();
+	      
 	             }
 	         } catch (Exception e) {
 	             e.printStackTrace();
