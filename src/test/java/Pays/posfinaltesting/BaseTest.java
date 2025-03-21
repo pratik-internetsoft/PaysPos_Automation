@@ -80,30 +80,30 @@ public class BaseTest {
 //	        }
 //	    }
 	
-	
-	@AfterMethod
-    public void tearDown() {
-        // Capture logcat and attach to Allure report
-        captureLogcatAndAttachToAllure();
-    }
-
-    protected void captureLogcatAndAttachToAllure() {
-        String logcatFilePath = "logcat.txt"; // Path to save logcat logs
-
-        try {
-            // Capture logcat logs
-            Process process = Runtime.getRuntime().exec("adb logcat -d > " + logcatFilePath);
-            process.waitFor(); // Wait for the command to complete
-
-            // Attach the logcat file to Allure report
-            Path logcatPath = Paths.get(logcatFilePath);
-            if (Files.exists(logcatPath)) {
-                Allure.addAttachment("Logcat Logs", "text/plain", new FileInputStream(logcatPath.toFile()), "txt");
-            } else {
-                System.out.println("Logcat file not found: " + logcatFilePath);
-            }
-        } catch (IOException | InterruptedException e) {
-            System.out.println("Failed to capture logcat logs: " + e.getMessage());
-        }
-    }
+//	
+//	@AfterMethod
+//    public void tearDown() {
+//        // Capture logcat and attach to Allure report
+//        captureLogcatAndAttachToAllure();
+//    }
+//
+//    protected void captureLogcatAndAttachToAllure() {
+//        String logcatFilePath = "logcat.txt"; // Path to save logcat logs
+//
+//        try {
+//            // Capture logcat logs
+//            Process process = Runtime.getRuntime().exec("adb logcat -d > " + logcatFilePath);
+//            process.waitFor(); // Wait for the command to complete
+//
+//            // Attach the logcat file to Allure report
+//            Path logcatPath = Paths.get(logcatFilePath);
+//            if (Files.exists(logcatPath)) {
+//                Allure.addAttachment("Logcat Logs", "text/plain", new FileInputStream(logcatPath.toFile()), "txt");
+//            } else {
+//                System.out.println("Logcat file not found: " + logcatFilePath);
+//            }
+//        } catch (IOException | InterruptedException e) {
+//            System.out.println("Failed to capture logcat logs: " + e.getMessage());
+//        }
+//    }
 }
