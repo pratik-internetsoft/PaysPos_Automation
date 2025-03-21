@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Pays.posfinaltesting.OpenOderTest">
+        <methods>
+          <include name="OpenOrder_Cash_FullRefund_PrintReceipt"/>
+          <include name="OpenOrder_Split_SelectNextPayment"/>
+          <include name="OpenOrder_Cash_FullRefund_CheckCashLog"/>
+          <include name="OpenOrder_AddOrderNote"/>
+          <include name="OpenOrder_Cash_RefundItemWise_SelectRefund"/>
+          <include name="OpenOrder_RemoveItem"/>
+          <include name="OpenOrder_ChangeOrderType"/>
+          <include name="Login"/>
+          <include name="OpenOrder_Setup"/>
+          <include name="OpenOrder_Card_Refund_SelectRefund"/>
+          <include name="OpenOrder_Cash_FullRefund_SelectRefund"/>
+          <include name="OpenOrder_Cash_FullRefund_Payment"/>
+          <include name="OpenOrder_Cash_RefundItemWise_Payment"/>
+          <include name="OpenOrder_AddCustomer"/>
+          <include name="OpenOrder_Card_FinalWayPayment"/>
+          <include name="OpenOrder_UpdateOrder"/>
+          <include name="OpenOrder_Cash_RefundItemWise_PrintReceipt"/>
+          <include name="OpenOrder_Tip_AddTip"/>
+          <include name="OpenOrder_ItemSelection"/>
+          <include name="OpenOrder_Cash_RefundItemWise_CheckCashLog"/>
+          <include name="OpenOrder_UpdateItem"/>
+          <include name="OpenOrder_Transaction"/>
+          <include name="OpenOrder_SaveOrder"/>
+          <include name="OpenOrder_Split_SelectSplit"/>
+          <include name="ConfigureAppium"/>
+          <include name="OpenOrder_AddManualItems"/>
+          <include name="OpenOrder_AddDiscount"/>
+          <include name="OpenOrder_CheckOrderType"/>
+          <include name="OpenOrder_Split_Refund_PrintReceipt"/>
+          <include name="OpenOrder_Card_Refund_PrintReceipt"/>
+          <include name="OpenOrder_Split_FinalWayPayment"/>
+          <include name="OpenOrder_Card_ConnecttoPax"/>
+          <include name="OpenOrder_Split_SelectCash"/>
+          <include name="OpenOrder_SelectOpenOrder"/>
+          <include name="OpenOrder_Split_Refund_SelectRefund"/>
+        </methods>
+      </class> <!-- Pays.posfinaltesting.OpenOderTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

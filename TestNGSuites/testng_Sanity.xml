@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+    <!-- Custom Listener -->
+ <listeners>
+    <listener class-name="Pays.posfinaltesting.resources.Listeners"/>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+</listeners>
+ <test  name="Login_Passcode">
+        <classes>
+            <class name="Pays.posfinaltesting.LoginPasscodeTest"/>
+        </classes>
+    </test>
+
+  
+  
+
+  <test name="TakeOut_Card_Refund">
+        <classes>
+          <class name="Pays.posfinaltesting.TakeOutTest">
+                <methods>
+                     <exclude name="TakeOut_Cash_FullRefund_.*" />
+                    <exclude name="TakeOut_Cash_RefundItemWise.*" />
+                    <exclude name="TakeOut_Card_ConnecttoPax"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+  
+   <test name="TakeOut_Cash_ItemWiseRefund">
+        <classes>
+    <class name="Pays.posfinaltesting.TakeOutTest">
+                <methods>
+                    <exclude name="TakeOut_Card_.*" />
+                    <exclude name="TakeOut_Cash_FullRefund_.*" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+ <test  name="TakeOut_Cash_Refund">
+    <classes>
+    <class name="Pays.posfinaltesting.TakeOutTest">
+    <methods>
+                 <exclude name="TakeOut_Card_.*" />
+                    <exclude name="TakeOut_Cash_RefundItemWise.*" />
+                </methods>
+                </class>
+    </classes>
+  </test> 
+ <test  name="Split PaymentTest">
+    <classes>
+    
+     <class name="Pays.posfinaltesting.OpenOderTest">
+      <methods>
+                 <exclude name="OpenOrder_Card_.*" />
+                    <exclude name="OpenOrder_Cash_RefundItemWise_.*" />
+                     <exclude name="OpenOrder_Cash_FullRefund_.*" />
+                     <exclude name="OpenOrder_Tip_AddTip"></exclude>
+                     <exclude name="OpenOrder_Loyalty_AppliedLoyaltyPoint"></exclude>
+                </methods>
+     </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name=" CashFull_RefundPaymentTest">
+    <classes>
+    
+     <class name="Pays.posfinaltesting.OpenOderTest">
+      <methods>
+                 <exclude name="OpenOrder_Card_.*" />
+                    <exclude name="OpenOrder_Cash_RefundItemWise_.*" />
+           
+                     <exclude name="OpenOrder_Split_.*"></exclude>
+                </methods>
+     </class>
+    </classes>
+  </test>
+  
+  <test  name=" Cash_ItemwiseRefundPaymentTest">
+    <classes>
+    
+     <class name="Pays.posfinaltesting.OpenOderTest">
+      <methods>
+					  <exclude name="OpenOrder_Card_.*" />
+                 
+                  <exclude name="OpenOrder_Cash_FullRefund_.*" />
+                     <exclude name="OpenOrder_Split_.*"></exclude>
+                       <exclude name="OpenOrder_Loyalty_AppliedLoyaltyPoint"></exclude>
+                </methods>
+     </class>
+    </classes>
+  </test>
+  
+  
+  <test  name="Card_RefundPaymentTest">
+    <classes>
+    
+     <class name="Pays.posfinaltesting.OpenOderTest">
+      <methods>
+			
+                    <exclude name="OpenOrder_Cash_RefundItemWise_.*" />
+                  <exclude name="OpenOrder_Cash_FullRefund_.*" />
+                     <exclude name="OpenOrder_Split_.*"></exclude>
+                           <exclude name="OpenOrder_Card_ConnecttoPax"></exclude>
+                             
+                </methods>
+     </class>
+    </classes>
+  </test>
+</suite> 

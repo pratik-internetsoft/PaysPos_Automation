@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test name="PhoneOrder_Delivery">
+    <classes>
+      <class name="Pays.posfinaltesting.PhoneOrderTest">
+        <methods>
+          <exclude name="PhoneOrder_PickUp_.*" />
+          <exclude name="PhoneOrder_Cancel_.*" />
+          <exclude name="PhoneOrder_PrintCustomerReceipt_.*" />
+        </methods>
+      </class>
+    </classes>
+  </test> 
+    <test name="PhoneOrder_PickUp">
+    <classes>
+      <class name="Pays.posfinaltesting.PhoneOrderTest">
+        <methods>
+          <exclude name="PhoneOrder_Delivery_.*" />
+         <exclude name="PhoneOrder_Cancel_.*" />
+          <exclude name="PhoneOrder_PrintCustomerReceipt_.*" />
+        </methods>
+      </class>
+    </classes>
+  </test> 
+  <test name="PhoneOrder_ Cancel">
+    <classes>
+      <class name="Pays.posfinaltesting.PhoneOrderTest">
+        <methods>
+          <exclude name="PhoneOrder_Delivery_.*" />
+          <exclude name="PhoneOrder_PickUp_.*" />
+         
+        </methods>
+      </class>
+    </classes>
+  </test> 
+  
+</suite> <!-- Suite -->

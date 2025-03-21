@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Pays.posfinaltesting.resources.Listeners"/>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+  </listeners>
+  <test thread-count="5" name="Login_Passcode(failed)">
+    <classes>
+      <class name="Pays.posfinaltesting.LoginPasscodeTest">
+        <methods>
+          <include name="LogintoApp"/>
+          <include name="tearDown"/>
+          <include name="ConfigureAppium"/>
+          <include name="Passcode"/>
+          <include name="Login_setup"/>
+        </methods>
+      </class> <!-- Pays.posfinaltesting.LoginPasscodeTest -->
+    </classes>
+  </test> <!-- Login_Passcode(failed) -->
+  <test thread-count="5" name="TakeOut_Card_Refund(failed)">
+    <classes>
+      <class name="Pays.posfinaltesting.TakeOutTest">
+        <methods>
+          <include name="TakeOut_Card_Refund_PrintReceipt"/>
+          <include name="TakeOut_AddOrderNote"/>
+          <include name="TakeOut_ItemSelection"/>
+          <include name="tearDown"/>
+          <include name="TakeOut_AddTip"/>
+          <include name="TakeOut_SaveOrder"/>
+          <include name="TakeOut_Transaction"/>
+          <include name="ConfigureAppium"/>
+          <include name="TakeOut_AppliedLoyaltyPoint"/>
+          <include name="TakeOut_AddDiscount"/>
+          <include name="TakeOut_AddCustomer"/>
+          <include name="TakeOut_SelectTakeout"/>
+          <include name="TakeOut_Setup"/>
+          <include name="TakeOut_RemoveItem"/>
+          <include name="Takeout_UpdateOrder"/>
+          <include name="TakeOut_Card_FinalWayPayment"/>
+          <include name="TakeOut_ChangeOrderType"/>
+          <include name="TakeOut_UpdateItem"/>
+          <include name="Login"/>
+          <include name="TakeOut_Card_Refund_SelectRefund"/>
+          <include name="TakeOut_AddManualItems"/>
+          <include name="TakeOut_CheckOrderType"/>
+        </methods>
+      </class> <!-- Pays.posfinaltesting.TakeOutTest -->
+    </classes>
+  </test> <!-- TakeOut_Card_Refund(failed) -->
+  <test thread-count="5" name="TakeOut_Cash_ItemWiseRefund(failed)">
+    <classes>
+      <class name="Pays.posfinaltesting.TakeOutTest">
+        <methods>
+          <include name="TakeOut_AddOrderNote"/>
+          <include name="TakeOut_ItemSelection"/>
+          <include name="TakeOut_AddTip"/>
+          <include name="tearDown"/>
+          <include name="ConfigureAppium"/>
+          <include name="TakeOut_SaveOrder"/>
+          <include name="TakeOut_Transaction"/>
+          <include name="TakeOut_AppliedLoyaltyPoint"/>
+          <include name="TakeOut_AddCustomer"/>
+          <include name="TakeOut_AddDiscount"/>
+          <include name="TakeOut_SelectTakeout"/>
+          <include name="TakeOut_Cash_RefundItemWise_SelectRefund"/>
+          <include name="TakeOut_RemoveItem"/>
+          <include name="TakeOut_Setup"/>
+          <include name="TakeOut_Cash_RefundItemWise_Payment"/>
+          <include name="Takeout_UpdateOrder"/>
+          <include name="TakeOut_ChangeOrderType"/>
+          <include name="TakeOut_UpdateItem"/>
+          <include name="Login"/>
+          <include name="TakeOut_AddManualItems"/>
+          <include name="TakeOut_Cash_RefundItemWise_CheckCashLog"/>
+          <include name="TakeOut_CheckOrderType"/>
+          <include name="TakeOut_Cash_RefundItemWise_PrintReceipt"/>
+        </methods>
+      </class> <!-- Pays.posfinaltesting.TakeOutTest -->
+    </classes>
+  </test> <!-- TakeOut_Cash_ItemWiseRefund(failed) -->
+  <test thread-count="5" name="TakeOut_Cash_Refund(failed)">
+    <classes>
+      <class name="Pays.posfinaltesting.TakeOutTest">
+        <methods>
+          <include name="TakeOut_AddOrderNote"/>
+          <include name="TakeOut_Cash_FullRefund_CheckCashLog"/>
+          <include name="TakeOut_ItemSelection"/>
+          <include name="TakeOut_AddTip"/>
+          <include name="tearDown"/>
+          <include name="ConfigureAppium"/>
+          <include name="TakeOut_SaveOrder"/>
+          <include name="TakeOut_Transaction"/>
+          <include name="TakeOut_Cash_FullRefund_PrintReceipt"/>
+          <include name="TakeOut_AddCustomer"/>
+          <include name="TakeOut_AddDiscount"/>
+          <include name="TakeOut_AppliedLoyaltyPoint"/>
+          <include name="TakeOut_SelectTakeout"/>
+          <include name="TakeOut_Setup"/>
+          <include name="TakeOut_RemoveItem"/>
+          <include name="Takeout_UpdateOrder"/>
+          <include name="TakeOut_Cash_FullRefund_Payment"/>
+          <include name="TakeOut_ChangeOrderType"/>
+          <include name="Login"/>
+          <include name="TakeOut_UpdateItem"/>
+          <include name="TakeOut_Cash_FullRefund_SelectRefund"/>
+          <include name="TakeOut_AddManualItems"/>
+          <include name="TakeOut_CheckOrderType"/>
+        </methods>
+      </class> <!-- Pays.posfinaltesting.TakeOutTest -->
+    </classes>
+  </test> <!-- TakeOut_Cash_Refund(failed) -->
+  <test thread-count="5" name="Split PaymentTest(failed)">
+    <classes>
+      <class name="Pays.posfinaltesting.OpenOderTest">
+        <methods>
+          <include name="OpenOrder_UpdateItem"/>
+          <include name="OpenOrder_Transaction"/>
+          <include name="tearDown"/>
+          <include name="OpenOrder_SaveOrder"/>
+          <include name="OpenOrder_Split_SelectNextPayment"/>
+          <include name="OpenOrder_Split_SelectSplit"/>
+          <include name="ConfigureAppium"/>
+          <include name="OpenOrder_AddOrderNote"/>
+          <include name="OpenOrder_ChangeOrderType"/>
+          <include name="OpenOrder_RemoveItem"/>
+          <include name="Login"/>
+          <include name="OpenOrder_AddManualItems"/>
+          <include name="OpenOrder_Setup"/>
+          <include name="OpenOrder_CheckOrderType"/>
+          <include name="OpenOrder_AddDiscount"/>
+          <include name="OpenOrder_Split_Refund_PrintReceipt"/>
+          <include name="OpenOrder_AddCustomer"/>
+          <include name="OpenOrder_UpdateOrder"/>
+          <include name="OpenOrder_Split_FinalWayPayment"/>
+          <include name="OpenOrder_Split_SelectCash"/>
+          <include name="OpenOrder_ItemSelection"/>
+          <include name="OpenOrder_SelectOpenOrder"/>
+          <include name="OpenOrder_Split_Refund_SelectRefund"/>
+        </methods>
+      </class> <!-- Pays.posfinaltesting.OpenOderTest -->
+    </classes>
+  </test> <!-- Split PaymentTest(failed) -->
+  <test thread-count="5" name=" CashFull_RefundPaymentTest(failed)">
+    <classes>
+      <class name="Pays.posfinaltesting.OpenOderTest">
+        <methods>
+          <include name="OpenOrder_UpdateItem"/>
+          <include name="OpenOrder_Transaction"/>
+          <include name="OpenOrder_SaveOrder"/>
+          <include name="tearDown"/>
+          <include name="OpenOrder_Cash_FullRefund_PrintReceipt"/>
+          <include name="OpenOrder_Cash_FullRefund_CheckCashLog"/>
+          <include name="ConfigureAppium"/>
+          <include name="OpenOrder_AddOrderNote"/>
+          <include name="OpenOrder_RemoveItem"/>
+          <include name="OpenOrder_ChangeOrderType"/>
+          <include name="Login"/>
+          <include name="OpenOrder_AddManualItems"/>
+          <include name="OpenOrder_Setup"/>
+          <include name="OpenOrder_AddDiscount"/>
+          <include name="OpenOrder_CheckOrderType"/>
+          <include name="OpenOrder_Cash_FullRefund_SelectRefund"/>
+          <include name="OpenOrder_Cash_FullRefund_Payment"/>
+          <include name="OpenOrder_AddCustomer"/>
+          <include name="OpenOrder_UpdateOrder"/>
+          <include name="OpenOrder_Loyalty_AppliedLoyaltyPoint"/>
+          <include name="OpenOrder_Tip_AddTip"/>
+          <include name="OpenOrder_ItemSelection"/>
+          <include name="OpenOrder_SelectOpenOrder"/>
+        </methods>
+      </class> <!-- Pays.posfinaltesting.OpenOderTest -->
+    </classes>
+  </test> <!--  CashFull_RefundPaymentTest(failed) -->
+  <test thread-count="5" name=" Cash_ItemwiseRefundPaymentTest(failed)">
+    <classes>
+      <class name="Pays.posfinaltesting.OpenOderTest">
+        <methods>
+          <include name="OpenOrder_UpdateItem"/>
+          <include name="OpenOrder_Transaction"/>
+          <include name="tearDown"/>
+          <include name="OpenOrder_SaveOrder"/>
+          <include name="ConfigureAppium"/>
+          <include name="OpenOrder_AddOrderNote"/>
+          <include name="OpenOrder_Cash_RefundItemWise_SelectRefund"/>
+          <include name="OpenOrder_RemoveItem"/>
+          <include name="OpenOrder_ChangeOrderType"/>
+          <include name="Login"/>
+          <include name="OpenOrder_AddManualItems"/>
+          <include name="OpenOrder_Setup"/>
+          <include name="OpenOrder_AddDiscount"/>
+          <include name="OpenOrder_CheckOrderType"/>
+          <include name="OpenOrder_AddCustomer"/>
+          <include name="OpenOrder_Cash_RefundItemWise_Payment"/>
+          <include name="OpenOrder_UpdateOrder"/>
+          <include name="OpenOrder_Cash_RefundItemWise_PrintReceipt"/>
+          <include name="OpenOrder_ItemSelection"/>
+          <include name="OpenOrder_Tip_AddTip"/>
+          <include name="OpenOrder_SelectOpenOrder"/>
+          <include name="OpenOrder_Cash_RefundItemWise_CheckCashLog"/>
+        </methods>
+      </class> <!-- Pays.posfinaltesting.OpenOderTest -->
+    </classes>
+  </test> <!--  Cash_ItemwiseRefundPaymentTest(failed) -->
+  <test thread-count="5" name="Card_RefundPaymentTest(failed)">
+    <classes>
+      <class name="Pays.posfinaltesting.OpenOderTest">
+        <methods>
+          <include name="OpenOrder_UpdateItem"/>
+          <include name="OpenOrder_Transaction"/>
+          <include name="OpenOrder_SaveOrder"/>
+          <include name="tearDown"/>
+          <include name="ConfigureAppium"/>
+          <include name="OpenOrder_AddOrderNote"/>
+          <include name="OpenOrder_RemoveItem"/>
+          <include name="OpenOrder_ChangeOrderType"/>
+          <include name="Login"/>
+          <include name="OpenOrder_AddManualItems"/>
+          <include name="OpenOrder_Setup"/>
+          <include name="OpenOrder_AddDiscount"/>
+          <include name="OpenOrder_CheckOrderType"/>
+          <include name="OpenOrder_Card_Refund_SelectRefund"/>
+          <include name="OpenOrder_AddCustomer"/>
+          <include name="OpenOrder_Card_FinalWayPayment"/>
+          <include name="OpenOrder_UpdateOrder"/>
+          <include name="OpenOrder_Card_Refund_PrintReceipt"/>
+          <include name="OpenOrder_Loyalty_AppliedLoyaltyPoint"/>
+          <include name="OpenOrder_Tip_AddTip"/>
+          <include name="OpenOrder_ItemSelection"/>
+          <include name="OpenOrder_SelectOpenOrder"/>
+        </methods>
+      </class> <!-- Pays.posfinaltesting.OpenOderTest -->
+    </classes>
+  </test> <!-- Card_RefundPaymentTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
