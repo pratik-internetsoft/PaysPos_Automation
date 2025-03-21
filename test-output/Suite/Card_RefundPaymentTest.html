@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Card_RefundPaymentTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/19</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/1/8</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 20 21:34:01 IST 2025</td>
+<td>Started on:</td><td>Fri Mar 21 11:07:23 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (600 ms)</td>
+<tr><td>Total time:</td><td>179 seconds (179194 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,55 +76,112 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Pays.posfinaltesting.OpenOderTest.ConfigureAppium()'><b>ConfigureAppium</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\prati\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 2290080791 shell getprop ro.build.version.sdk&apos; exited with code 255&apos;; Command output: &lt;empty&gt; 
-Host info: host: &apos;PRATIK&apos;, ip: &apos;192.168.0.234&apos;
+<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_AddDiscount()'><b>OpenOrder_AddDiscount</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: &apos;POST /element&apos; cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:deviceName: LANDI C20pro, appium:newCommandTimeout: 10000, platformName: ANDROID}]}]
-Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:deviceName: LANDI C20pro, appium:newCommandTimeout: 10000, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
+Command: [91603bf0-d6ee-46b4-97df-8f3987b9be90, findElement {using=id, value=com.pays.pos:id/txtSubTotal}]
+Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: E:\EclipseWorkspace\posfina..., appActivity: com.pays.pos.ui.activities...., appPackage: com.pays.pos, autoGrantPermissions: true, automationName: UIAutomator2, deviceName: LANDI C20pro, newCommandTimeout: 10000, platformName: ANDROID}, appium:deviceApiLevel: 28, appium:deviceManufacturer: SUNMI, appium:deviceModel: T2s, appium:deviceName: TS43223941452, appium:deviceScreenDensity: 230, appium:deviceScreenSize: 1920x1080, appium:deviceUDID: TS43223941452, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 10000, appium:pixelRatio: 1.4375, appium:platformVersion: 9, appium:statBarHeight: 0, appium:takesScreenshot: true, appium:viewportRect: {height: 1080, left: 0, top: 0, width: 1920}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 91603bf0-d6ee-46b4-97df-8f3987b9be90
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:313)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:113)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at Pays.posfinaltesting.BaseTest.ConfigureAppium(BaseTest.java:54)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.lambda$getSearchingFunction$0(ByChained.java:41)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:72)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:54)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$HqtrNaFF.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Pays.posfinaltesting.actions.TransactionClass.getFormattedValue(TransactionClass.java:202)
+	at Pays.posfinaltesting.actions.SetupClass.getSubtotal(SetupClass.java:426)
+	at Pays.posfinaltesting.OpenOderTest.OpenOrder_AddDiscount(OpenOderTest.java:176)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2121573248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2121573248'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\prati\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 2290080791 shell getprop ro.build.version.sdk&apos; exited with code 255&apos;; Command output: &lt;empty&gt; 
-Host info: host: &apos;PRATIK&apos;, ip: &apos;192.168.0.234&apos;
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace481187673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace481187673'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: &apos;POST /element&apos; cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:deviceName: LANDI C20pro, appium:newCommandTimeout: 10000, platformName: ANDROID}]}]
-Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:deviceName: LANDI C20pro, appium:newCommandTimeout: 10000, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
+Command: [91603bf0-d6ee-46b4-97df-8f3987b9be90, findElement {using=id, value=com.pays.pos:id/txtSubTotal}]
+Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: E:\EclipseWorkspace\posfina..., appActivity: com.pays.pos.ui.activities...., appPackage: com.pays.pos, autoGrantPermissions: true, automationName: UIAutomator2, deviceName: LANDI C20pro, newCommandTimeout: 10000, platformName: ANDROID}, appium:deviceApiLevel: 28, appium:deviceManufacturer: SUNMI, appium:deviceModel: T2s, appium:deviceName: TS43223941452, appium:deviceScreenDensity: 230, appium:deviceScreenSize: 1920x1080, appium:deviceUDID: TS43223941452, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 10000, appium:pixelRatio: 1.4375, appium:platformVersion: 9, appium:statBarHeight: 0, appium:takesScreenshot: true, appium:viewportRect: {height: 1080, left: 0, top: 0, width: 1920}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 91603bf0-d6ee-46b4-97df-8f3987b9be90
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:313)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:113)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at Pays.posfinaltesting.BaseTest.ConfigureAppium(BaseTest.java:54)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.lambda$getSearchingFunction$0(ByChained.java:41)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:72)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:54)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$HqtrNaFF.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Pays.posfinaltesting.actions.TransactionClass.getFormattedValue(TransactionClass.java:202)
+	at Pays.posfinaltesting.actions.SetupClass.getSubtotal(SetupClass.java:426)
+	at Pays.posfinaltesting.OpenOderTest.OpenOrder_AddDiscount(OpenOderTest.java:176)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at org.testng.TestRunner.privateRun(TestRunner.java:739)
 	at org.testng.TestRunner.run(TestRunner.java:614)
@@ -143,10 +200,10 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -154,15 +211,55 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Pays.posfinaltesting.OpenOderTest.tearDown()'><b>tearDown</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
+<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_SaveOrder()'><b>OpenOrder_SaveOrder</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
 <td></td>
-<td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
+<td>1</td>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
 <tr>
-<td title='Pays.posfinaltesting.OpenOderTest.Login()'><b>Login</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
+<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_RemoveItem()'><b>OpenOrder_RemoveItem</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
 <td></td>
-<td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
+<td>2</td>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
+<tr>
+<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_UpdateItem()'><b>OpenOrder_UpdateItem</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
+<td></td>
+<td>9</td>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
+<tr>
+<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_AddManualItems()'><b>OpenOrder_AddManualItems</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
+<td></td>
+<td>18</td>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
+<tr>
+<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_AddOrderNote()'><b>OpenOrder_AddOrderNote</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
+<td></td>
+<td>4</td>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
+<tr>
+<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_Setup()'><b>OpenOrder_Setup</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
+<td></td>
+<td>4</td>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
+<tr>
+<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_SelectOpenOrder()'><b>OpenOrder_SelectOpenOrder</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
+<td></td>
+<td>10</td>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
+<tr>
+<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_CheckOrderType()'><b>OpenOrder_CheckOrderType</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
+<td></td>
+<td>8</td>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
+<tr>
+<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_UpdateOrder()'><b>OpenOrder_UpdateOrder</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
+<td></td>
+<td>3</td>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
+<tr>
+<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_ItemSelection()'><b>OpenOrder_ItemSelection</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
+<td></td>
+<td>71</td>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -173,13 +270,13 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_SelectOpenOrder()'><b>OpenOrder_SelectOpenOrder</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_SelectOpenOrder() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Setup() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
+<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_Loyalty_AppliedLoyaltyPoint()'><b>OpenOrder_Loyalty_AppliedLoyaltyPoint</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Loyalty_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
+[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@52066604]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace303805531", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace303805531'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_SelectOpenOrder() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Setup() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2075246915", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2075246915'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Loyalty_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
+[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@52066604]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -201,15 +298,15 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
 <tr>
 <td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_FinalWayPayment()'><b>OpenOrder_Card_FinalWayPayment</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_FinalWayPayment() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Tip_AddTip() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_FinalWayPayment() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
+[Pays.posfinaltesting.OpenOderTest.OpenOrder_Tip_AddTip() on instance Pays.posfinaltesting.OpenOderTest@52066604]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace427939937", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace427939937'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_FinalWayPayment() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Tip_AddTip() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace56284883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace56284883'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_FinalWayPayment() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
+[Pays.posfinaltesting.OpenOderTest.OpenOrder_Tip_AddTip() on instance Pays.posfinaltesting.OpenOderTest@52066604]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -231,384 +328,15 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_RemoveItem()'><b>OpenOrder_RemoveItem</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_RemoveItem() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_UpdateItem() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1933224408", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1933224408'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_RemoveItem() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_UpdateItem() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_UpdateOrder()'><b>OpenOrder_UpdateOrder</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_UpdateOrder() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_CheckOrderType() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace848102479", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace848102479'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_UpdateOrder() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_CheckOrderType() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_Loyalty_AppliedLoyaltyPoint()'><b>OpenOrder_Loyalty_AppliedLoyaltyPoint</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Loyalty_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1242969461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1242969461'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Loyalty_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer()'><b>OpenOrder_AddCustomer</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_ChangeOrderType() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1574503358", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1574503358'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_ChangeOrderType() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_AddOrderNote()'><b>OpenOrder_AddOrderNote</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_AddOrderNote() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_UpdateOrder() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace74735260", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace74735260'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_AddOrderNote() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_UpdateOrder() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_ItemSelection()'><b>OpenOrder_ItemSelection</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_ItemSelection() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_SelectOpenOrder() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace483635512", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace483635512'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_ItemSelection() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_SelectOpenOrder() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_AddManualItems()'><b>OpenOrder_AddManualItems</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_AddManualItems() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_ItemSelection() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1517105378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1517105378'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_AddManualItems() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_ItemSelection() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_Setup()'><b>OpenOrder_Setup</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\prati\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 2290080791 shell getprop ro.build.version.sdk&apos; exited with code 255&apos;; Command output: &lt;empty&gt; 
-Host info: host: &apos;PRATIK&apos;, ip: &apos;192.168.0.234&apos;
-Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:deviceName: LANDI C20pro, appium:newCommandTimeout: 10000, platformName: ANDROID}]}]
-Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:deviceName: LANDI C20pro, appium:newCommandTimeout: 10000, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:313)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:113)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at Pays.posfinaltesting.BaseTest.ConfigureAppium(BaseTest.java:54)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1898773347", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1898773347'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\prati\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 2290080791 shell getprop ro.build.version.sdk&apos; exited with code 255&apos;; Command output: &lt;empty&gt; 
-Host info: host: &apos;PRATIK&apos;, ip: &apos;192.168.0.234&apos;
-Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:deviceName: LANDI C20pro, appium:newCommandTimeout: 10000, platformName: ANDROID}]}]
-Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:deviceName: LANDI C20pro, appium:newCommandTimeout: 10000, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:313)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:113)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at Pays.posfinaltesting.BaseTest.ConfigureAppium(BaseTest.java:54)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_SaveOrder()'><b>OpenOrder_SaveOrder</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_SaveOrder() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_RemoveItem() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace728236551", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace728236551'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_SaveOrder() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_RemoveItem() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_SelectRefund()'><b>OpenOrder_Card_Refund_SelectRefund</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_SelectRefund() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_FinalWayPayment() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1408549350", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1408549350'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_SelectRefund() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_FinalWayPayment() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_PrintReceipt()'><b>OpenOrder_Card_Refund_PrintReceipt</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_PrintReceipt() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_SelectRefund() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1665324560", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1665324560'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_PrintReceipt() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_SelectRefund() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
 <tr>
 <td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_ChangeOrderType()'><b>OpenOrder_ChangeOrderType</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_ChangeOrderType() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddDiscount() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_ChangeOrderType() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
+[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddDiscount() on instance Pays.posfinaltesting.OpenOderTest@52066604]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace695085082", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace695085082'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_ChangeOrderType() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddDiscount() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1033651942", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1033651942'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_ChangeOrderType() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
+[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddDiscount() on instance Pays.posfinaltesting.OpenOderTest@52066604]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -630,45 +358,15 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_Tip_AddTip()'><b>OpenOrder_Tip_AddTip</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Tip_AddTip() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Transaction() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace92862012", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace92862012'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Tip_AddTip() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Transaction() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
 <tr>
 <td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_Transaction()'><b>OpenOrder_Transaction</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Transaction() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Transaction() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
+[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@52066604]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1798636297", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1798636297'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Transaction() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1215126567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1215126567'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Transaction() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
+[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@52066604]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -690,15 +388,15 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
 <tr>
-<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_CheckOrderType()'><b>OpenOrder_CheckOrderType</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_CheckOrderType() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_SaveOrder() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
+<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_SelectRefund()'><b>OpenOrder_Card_Refund_SelectRefund</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_SelectRefund() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
+[Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_FinalWayPayment() on instance Pays.posfinaltesting.OpenOderTest@52066604]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1457157255", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1457157255'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_CheckOrderType() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_SaveOrder() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace100483959", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace100483959'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_SelectRefund() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
+[Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_FinalWayPayment() on instance Pays.posfinaltesting.OpenOderTest@52066604]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -720,15 +418,15 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
 <tr>
-<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_AddDiscount()'><b>OpenOrder_AddDiscount</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_AddDiscount() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddOrderNote() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
+<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer()'><b>OpenOrder_AddCustomer</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
+[Pays.posfinaltesting.OpenOderTest.OpenOrder_ChangeOrderType() on instance Pays.posfinaltesting.OpenOderTest@52066604]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1977493952", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1977493952'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_AddDiscount() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddOrderNote() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace91495369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace91495369'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
+[Pays.posfinaltesting.OpenOderTest.OpenOrder_ChangeOrderType() on instance Pays.posfinaltesting.OpenOderTest@52066604]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -750,15 +448,15 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
 <tr>
-<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_UpdateItem()'><b>OpenOrder_UpdateItem</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_UpdateItem() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddManualItems() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
+<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_Tip_AddTip()'><b>OpenOrder_Tip_AddTip</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Tip_AddTip() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
+[Pays.posfinaltesting.OpenOderTest.OpenOrder_Transaction() on instance Pays.posfinaltesting.OpenOderTest@52066604]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace168398198", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace168398198'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_UpdateItem() on instance Pays.posfinaltesting.OpenOderTest@55562aa9 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddManualItems() on instance Pays.posfinaltesting.OpenOderTest@55562aa9]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace240674693", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace240674693'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Tip_AddTip() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
+[Pays.posfinaltesting.OpenOderTest.OpenOrder_Transaction() on instance Pays.posfinaltesting.OpenOderTest@52066604]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -780,7 +478,37 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.OpenOderTest@55562aa9</td></tr>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
+<tr>
+<td title='Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_PrintReceipt()'><b>OpenOrder_Card_Refund_PrintReceipt</b><br>Test class: Pays.posfinaltesting.OpenOderTest</td>
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_PrintReceipt() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
+[Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_SelectRefund() on instance Pays.posfinaltesting.OpenOderTest@52066604]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1348835994", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1348835994'><pre>java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_PrintReceipt() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
+[Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_SelectRefund() on instance Pays.posfinaltesting.OpenOderTest@52066604]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Pays.posfinaltesting.OpenOderTest@52066604</td></tr>
 </table><p>
 </body>
 </html>

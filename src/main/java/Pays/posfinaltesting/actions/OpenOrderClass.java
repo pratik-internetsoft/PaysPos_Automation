@@ -80,63 +80,62 @@ public class OpenOrderClass {
 	    }
 	    
 	    public boolean selectRandomItems(int numItemsTotal) {
-	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
-	        Random random = new Random();
-	        int numItemsToAdd = random.nextInt(numItemsTotal) + 1;
-	        System.out.println("Adding " + numItemsToAdd + " items.");
+	    	WebDriverWait shortwait = new WebDriverWait(driver, Duration.ofMillis(500));
 
-	        if (openOrder.categoryList.size() < 2) {
-	            System.out.println("Not enough categories to skip the first one.");
-	            return false;
-	        }
+	        Random random = new Random();
+	        int numItemsToAdd = random.nextInt(numItemsTotal) + 1; // Random number between 1 and 4
+	        System.out.println("Adding " + numItemsToAdd + " items.");
 
 	        for (int i = 0; i < numItemsToAdd; i++) {
 	            try {
-	            	List<WebElement> categoriesExcludingFirst = openOrder.categoryList.subList(1, openOrder.categoryList.size());
-	            	int categoryIndex = random.nextInt(categoriesExcludingFirst.size());
-	            	WebElement category = categoriesExcludingFirst.get(categoryIndex);
-
-	                if (category.isDisplayed() && category.isEnabled()) {
-	                    category.click();
-	                } else {
-	                    wait.until(ExpectedConditions.elementToBeClickable(category)).click();
+	                // Ensure at least two categories exist
+	                if (openOrder.categoryList.size() < 2) {
+	                    System.out.println("Not enough categories to skip the first one.");
+	                    return false;
 	                }
+
+	                // Select a random category, ensuring the first category (index 0) is never selected
+	                int categoryIndex = random.nextInt(openOrder.categoryList.size() - 1) + 1; // Picks from index 1 onwards
+	                WebElement category = openOrder.categoryList.get(categoryIndex);
+
+	                shortwait.until(ExpectedConditions.elementToBeClickable(category)).click(); // Ensure category is clickable before clicking
 	                System.out.println("Category selected (excluding the first one).");
+
+	                // Wait for items in the selected category
+	                shortwait.until(ExpectedConditions.visibilityOfAllElements(openOrder.itemList));
 
 	                if (openOrder.itemList.isEmpty()) {
 	                    System.out.println("No items in this category.");
 	                    continue;
-	                }
-
-	                int itemIndex = random.nextInt(openOrder.itemList.size());
-	                WebElement item = openOrder.itemList.get(itemIndex);
-
-	                if (item.isDisplayed() && item.isEnabled()) {
-	                    item.click();
 	                } else {
-	                    wait.until(ExpectedConditions.elementToBeClickable(item)).click();
+	                    // Select a random item (including the first one)
+	                    int itemIndex = random.nextInt(openOrder.itemList.size()); // Allows selecting the first item (index 0)
+	                    WebElement item = openOrder.itemList.get(itemIndex);
+
+	                    shortwait.until(ExpectedConditions.elementToBeClickable(item)).click();
+	                    System.out.println("Item selected.");
 	                }
-	                System.out.println("Item selected.");
+
+	                // Wait for modifiers if available
+	                shortwait.until(ExpectedConditions.visibilityOfAllElements(openOrder.modifierList));
 
 	                if (!openOrder.modifierList.isEmpty()) {
 	                    int modifierIndex1 = random.nextInt(openOrder.modifierList.size());
 	                    int modifierIndex2;
+
 	                    do {
 	                        modifierIndex2 = random.nextInt(openOrder.modifierList.size());
 	                    } while (modifierIndex1 == modifierIndex2);
 
-	                    openOrder.modifierList.get(modifierIndex1).click();
-	                    openOrder.modifierList.get(modifierIndex2).click();
+	                    shortwait.until(ExpectedConditions.elementToBeClickable(openOrder.modifierList.get(modifierIndex1))).click();
+	                    shortwait.until(ExpectedConditions.elementToBeClickable(openOrder.modifierList.get(modifierIndex2))).click();
 	                    System.out.println("Modifiers selected.");
 	                } else {
 	                    System.out.println("No modifiers found.");
 	                }
 
-	                if (openOrder.doneButton.isDisplayed() && openOrder.doneButton.isEnabled()) {
-	                    openOrder.doneButton.click();
-	                } else {
-	                    wait.until(ExpectedConditions.elementToBeClickable(openOrder.doneButton)).click();
-	                }
+	                // Click the Done button
+	                shortwait.until(ExpectedConditions.elementToBeClickable(openOrder.doneButton)).click();
 	                System.out.println("Item added.");
 
 	            } catch (Exception e) {

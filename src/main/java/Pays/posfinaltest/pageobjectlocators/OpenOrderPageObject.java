@@ -20,7 +20,7 @@ public class OpenOrderPageObject {
 			PageFactory.initElements(new AppiumFieldDecorator(driver), this); // Initialize PageFactory elements
 
 		}
-		
+		@CacheLookup
 		@AndroidFindBy(xpath="//android.widget.TextView[@resource-id=\"com.pays.pos:id/txtTitle\" and @text=\"Open Order\"]")
 		public WebElement OpenOrder;
 	//// androidx.recyclerview.widget.RecyclerView[@resource-id='com.pays.pos:id/rvCategory']/androidx.appcompat.widget.LinearLayoutCompat
