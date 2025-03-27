@@ -460,8 +460,8 @@ public class TransactionClass {
 				wait.until(ExpectedConditions.elementToBeClickable(done)).click();
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 				System.out.println("Refund Button click");
-				Thread.sleep(10);	
-				wait.until(ExpectedConditions.elementToBeClickable(saveRefund)).click();
+				Thread.sleep(100);	
+				wait.until(ExpectedConditions.visibilityOf(saveRefund)).click();
 				System.out.println("Save Button click");
 				return true;
 

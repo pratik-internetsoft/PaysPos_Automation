@@ -42,7 +42,6 @@ public class OpenOrderClass {
 							+ phoneNumber + "\"))")));
 			phoneElement.click();
 		}
-
 		
 	    public boolean ChangeOrderType(String orderType) {
 	    	wait.until(ExpectedConditions.visibilityOf(openOrder.OrderDisplay)).click();
