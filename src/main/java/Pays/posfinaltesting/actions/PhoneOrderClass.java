@@ -33,7 +33,7 @@ public class PhoneOrderClass {
 	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));// Explicit wait of 10 sec
 	        this.random = new Random();
 	        this.phoneOrder = new PhoneOrderPageObject(driver);
-	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	    }
 	    
@@ -66,6 +66,7 @@ public class PhoneOrderClass {
 		// Pickup
 		// Waits until the text view is visible and then fetches the text content
 		public String getDeliveryOrPickupText() {
+		
 			return wait.until(ExpectedConditions.visibilityOf(phoneOrder.deliveryOrPickupTextView)).getText();
 		}
 
@@ -80,6 +81,12 @@ public class PhoneOrderClass {
 		// smooth execution
 		public void PhoneOrderButtonClick() {
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+			 WebElement sellCard = wait.until(ExpectedConditions.presenceOfElementLocated(
+	                 AppiumBy.androidUIAutomator(
+	                         "new UiScrollable(new UiSelector().className(\"androidx.recyclerview.widget.RecyclerView\"))" +
+	                         ".scrollIntoView(new UiSelector().resourceId(\"com.pays.pos:id/txtCategoryName\").text(\"Sell Card\"))"
+	                 )
+	         ));
 			wait.until(ExpectedConditions.visibilityOf(phoneOrder.PhoneOrderButton)).click();
 		}
 
@@ -144,74 +151,71 @@ public class PhoneOrderClass {
 		}
 
 		// Method to select items from the categories
-		public boolean selectRandomItems(int numItemsTotal) {
-	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
-	        Random random = new Random();
-	        int numItemsToAdd = random.nextInt(numItemsTotal) + 1;
-	        System.out.println("Adding " + numItemsToAdd + " items.");
+		 public boolean selectRandomItems(int numItemsTotal) {
+			 WebDriverWait shortwait = new WebDriverWait(driver, Duration.ofMillis(500));
 
-	        if (phoneOrder.categoryList.size() < 2) {
-	            System.out.println("Not enough categories to skip the first one.");
-	            return false;
-	        }
+		        Random random = new Random();
+		        int numItemsToAdd = random.nextInt(numItemsTotal) + 1; // Random number between 1 and 4
+		        System.out.println("Adding " + numItemsToAdd + " items.");
 
-	        for (int i = 0; i < numItemsToAdd; i++) {
-	            try {
-	            	List<WebElement> categoriesExcludingFirst = phoneOrder.categoryList.subList(1, phoneOrder.categoryList.size());
-	            	int categoryIndex = random.nextInt(categoriesExcludingFirst.size());
-	            	WebElement category = categoriesExcludingFirst.get(categoryIndex);
-//	                int categoryIndex = random.nextInt(phoneOrder.categoryList.size() - 1) + 1;
-//	                WebElement category = phoneOrder.categoryList.get(categoryIndex);
+		        for (int i = 0; i < numItemsToAdd; i++) {
+		            try {
+		                // Ensure at least two categories exist
+		                if (phoneOrder.categoryList.size() < 2) {
+		                    System.out.println("Not enough categories to skip the first one.");
+		                    return false;
+		                }
 
-	                if (category.isDisplayed() && category.isEnabled()) {
-	                    category.click();
-	                } else {
-	                    wait.until(ExpectedConditions.elementToBeClickable(category)).click();
-	                }
-	                System.out.println("Category selected (excluding the first one).");
+		                // Select a random category, ensuring the first category (index 0) is never selected
+		                int categoryIndex = random.nextInt(phoneOrder.categoryList.size() - 1) + 1; // Picks from index 1 onwards
+		                WebElement category = phoneOrder.categoryList.get(categoryIndex);
 
-	                if (phoneOrder.itemList.isEmpty()) {
-	                    System.out.println("No items in this category.");
-	                    continue;
-	                }
+		                shortwait.until(ExpectedConditions.elementToBeClickable(category)).click(); // Ensure category is clickable before clicking
+		                System.out.println("Category selected (excluding the first one).");
 
-	                int itemIndex = random.nextInt(phoneOrder.itemList.size());
-	                WebElement item = phoneOrder.itemList.get(itemIndex);
+		                // Wait for items in the selected category
+		                shortwait.until(ExpectedConditions.visibilityOfAllElements(phoneOrder.itemList));
 
-	                if (item.isDisplayed() && item.isEnabled()) {
-	                    item.click();
-	                } else {
-	                    wait.until(ExpectedConditions.elementToBeClickable(item)).click();
-	                }
-	                System.out.println("Item selected.");
+		                if (phoneOrder.itemList.isEmpty()) {
+		                    System.out.println("No items in this category.");
+		                    continue;
+		                } else {
+		                    // Select a random item (including the first one)
+		                    int itemIndex = random.nextInt(phoneOrder.itemList.size()); // Allows selecting the first item (index 0)
+		                    WebElement item = phoneOrder.itemList.get(itemIndex);
 
-	                if (!phoneOrder.modifierList.isEmpty()) {
-	                    int modifierIndex1 = random.nextInt(phoneOrder.modifierList.size());
-	                    int modifierIndex2;
-	                    do {
-	                        modifierIndex2 = random.nextInt(phoneOrder.modifierList.size());
-	                    } while (modifierIndex1 == modifierIndex2);
+		                    shortwait.until(ExpectedConditions.elementToBeClickable(item)).click();
+		                    System.out.println("Item selected.");
+		                }
 
-	                    phoneOrder.modifierList.get(modifierIndex1).click();
-	                    phoneOrder.modifierList.get(modifierIndex2).click();
-	                    System.out.println("Modifiers selected.");
-	                } else {
-	                    System.out.println("No modifiers found.");
-	                }
+		                // Wait for modifiers if available
+		                shortwait.until(ExpectedConditions.visibilityOfAllElements(phoneOrder.modifierList));
 
-	                if (phoneOrder.doneButton.isDisplayed() && phoneOrder.doneButton.isEnabled()) {
-	                	phoneOrder.doneButton.click();
-	                } else {
-	                    wait.until(ExpectedConditions.elementToBeClickable(phoneOrder.doneButton)).click();
-	                }
-	                System.out.println("Item added.");
+		                if (!phoneOrder.modifierList.isEmpty()) {
+		                    int modifierIndex1 = random.nextInt(phoneOrder.modifierList.size());
+		                    int modifierIndex2;
 
-	            } catch (Exception e) {
-	                System.out.println("Error during item selection: " + e.getMessage());
-	            }
-	        }
-	        return true;
-	    }
+		                    do {
+		                        modifierIndex2 = random.nextInt(phoneOrder.modifierList.size());
+		                    } while (modifierIndex1 == modifierIndex2);
+
+		                    shortwait.until(ExpectedConditions.elementToBeClickable(phoneOrder.modifierList.get(modifierIndex1))).click();
+		                    shortwait.until(ExpectedConditions.elementToBeClickable(phoneOrder.modifierList.get(modifierIndex2))).click();
+		                    System.out.println("Modifiers selected.");
+		                } else {
+		                    System.out.println("No modifiers found.");
+		                }
+
+		                // Click the Done button
+		                shortwait.until(ExpectedConditions.elementToBeClickable(phoneOrder.doneButton)).click();
+		                System.out.println("Item added.");
+
+		            } catch (Exception e) {
+		                System.out.println("Error during item selection: " + e.getMessage());
+		            }
+		        }
+		        return true;
+		    }
 
 		// Method to save the order
 		public void ClickOrderSave() {
