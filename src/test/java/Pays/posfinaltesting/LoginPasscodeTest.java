@@ -28,7 +28,7 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.SeverityLevel; 
 import io.qameta.allure.Story;
 
 @Epic("Login Managment") // High-level feature or module
