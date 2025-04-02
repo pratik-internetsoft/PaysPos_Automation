@@ -20,7 +20,6 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 import java.util.Random;
-
 public class PhoneOrderClass {
 	 private AppiumDriver driver;
 	  private WebDriverWait wait;
