@@ -8,6 +8,8 @@ import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Duration;
+import java.util.Arrays;
+import java.util.Comparator;
 
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -41,7 +43,22 @@ public class BaseTest {
 	    UiAutomator2Options options = new UiAutomator2Options();
 	    options.setPlatformName("Android");
 	    options.setDeviceName("LANDI C20pro");
-	    options.setApp("E:\\EclipseWorkspace\\posfinaltesting\\src\\test\\java\\resources\\SANDBOX_Pays_17_Mar_2025_14_28_v1.36_PAYMENT_.apk");
+	    // Define the APK folder
+        String apkDirectoryPath = "E:\\EclipseWorkspace\\posfinaltesting\\src\\test\\java\\resources";
+        File apkDirectory = new File(apkDirectoryPath);
+
+        // Get the latest APK file dynamically
+        File latestApk = Arrays.stream(apkDirectory.listFiles((dir, name) -> name.toLowerCase().endsWith(".apk")))
+                .max(Comparator.comparingLong(File::lastModified))
+                .orElse(null);
+
+        if (latestApk != null) {
+            System.out.println("Using APK: " + latestApk.getAbsolutePath());
+            options.setApp(latestApk.getAbsolutePath()); // Set the latest APK file
+        } else {
+            System.err.println("No APK file found in directory: " + apkDirectoryPath);
+        }
+
 	    options.setAutoGrantPermissions(true); 
 	    options.setNewCommandTimeout(Duration.ofSeconds(10000));
 	   
