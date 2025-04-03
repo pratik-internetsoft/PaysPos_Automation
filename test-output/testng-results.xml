@@ -1,542 +1,416 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="19" passed="10" failed="1" skipped="8">
+<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-21T11:07:23 IST" name="Suite" finished-at="2025-03-21T11:10:22 IST" duration-ms="179194">
+  <suite started-at="2025-04-03T19:24:53 IST" name="Suite" finished-at="2025-04-03T19:28:13 IST" duration-ms="199368">
     <groups>
+      <group name="categories">
+        <method signature="CategoriesandItemsTest.Categories_Select_Categories()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Categories_Select_Categories" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
+        <method signature="CategoriesandItemsTest.Categories_CreateCategoriesClick()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Categories_CreateCategoriesClick" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
+        <method signature="CategoriesandItemsTest.Categories_SetCategoryname()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Categories_SetCategoryname" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
+        <method signature="CategoriesandItemsTest.Categories_SaveCategory()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Categories_SaveCategory" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
+        <method signature="CategoriesandItemsTest.Categories_CheckIfCategoryIsAdded()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Categories_CheckIfCategoryIsAdded" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
+      </group> <!-- categories -->
+      <group name="login">
+        <method signature="CategoriesandItemsTest.Login()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Login" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
+      </group> <!-- login -->
+      <group name="items">
+        <method signature="CategoriesandItemsTest.Items_AddItems()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Items_AddItems" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
+        <method signature="CategoriesandItemsTest.Items_SetItem()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Items_SetItem" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
+        <method signature="CategoriesandItemsTest.Items_Home()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Items_Home" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
+        <method signature="CategoriesandItemsTest.Items_SelectPay()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Items_SelectPay" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
+      </group> <!-- items -->
+      <group name="transaction">
+        <method signature="CategoriesandItemsTest.Items_Transaction()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Items_Transaction" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
+      </group> <!-- transaction -->
     </groups>
-    <test started-at="2025-03-21T11:07:23 IST" name="Card_RefundPaymentTest" finished-at="2025-03-21T11:10:22 IST" duration-ms="179194">
-      <class name="Pays.posfinaltesting.OpenOderTest">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:07:23 IST" name="ConfigureAppium" finished-at="2025-03-21T11:07:42 IST" duration-ms="18349" status="PASS">
+    <test started-at="2025-04-03T19:24:53 IST" name="Test" finished-at="2025-04-03T19:28:13 IST" duration-ms="199368">
+      <class name="Pays.posfinaltesting.CategoriesandItemsTest">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:24:53 IST" name="ConfigureAppium" finished-at="2025-04-03T19:25:04 IST" duration-ms="10656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:07:42 IST" name="Login" finished-at="2025-03-21T11:08:08 IST" duration-ms="26321" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:04 IST" name="setup" finished-at="2025-04-03T19:25:04 IST" duration-ms="417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Login()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:04 IST" name="Login" finished-at="2025-04-03T19:25:19 IST" duration-ms="14403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:19 IST" name="tearDown" finished-at="2025-04-03T19:25:19 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=OpenOderTest.OpenOrder_Setup()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604] output={null}]]]>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=CategoriesandItemsTest.Login()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="OpenOrder_Setup()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:08:08 IST" name="OpenOrder_Setup" finished-at="2025-03-21T11:08:12 IST" duration-ms="4518" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:19 IST" name="setup" finished-at="2025-04-03T19:25:19 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_Setup -->
-        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:08:12 IST" name="Login" finished-at="2025-03-21T11:08:12 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="Categories_Select_Categories()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:19 IST" name="Categories_Select_Categories" finished-at="2025-04-03T19:25:30 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Login" duration-ms="11370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Categories_Select_Categories -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:30 IST" name="tearDown" finished-at="2025-04-03T19:25:30 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=OpenOderTest.OpenOrder_SelectOpenOrder()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604] output={null}]]]>
+                <![CDATA[[TestResult name=Categories_Select_Categories status=SUCCESS method=CategoriesandItemsTest.Categories_Select_Categories()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="OpenOrder_SelectOpenOrder()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:08:12 IST" name="OpenOrder_SelectOpenOrder" finished-at="2025-03-21T11:08:23 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_Setup" duration-ms="10155" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:30 IST" name="setup" finished-at="2025-04-03T19:25:30 IST" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_SelectOpenOrder -->
-        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:08:23 IST" name="Login" finished-at="2025-03-21T11:08:23 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="Categories_CreateCategoriesClick()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:30 IST" name="Categories_CreateCategoriesClick" finished-at="2025-04-03T19:25:31 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Categories_Select_Categories" duration-ms="1063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Categories_CreateCategoriesClick -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:31 IST" name="tearDown" finished-at="2025-04-03T19:25:31 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=OpenOderTest.OpenOrder_ItemSelection()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604] output={null}]]]>
+                <![CDATA[[TestResult name=Categories_CreateCategoriesClick status=SUCCESS method=CategoriesandItemsTest.Categories_CreateCategoriesClick()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="OpenOrder_ItemSelection()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:08:23 IST" name="OpenOrder_ItemSelection" finished-at="2025-03-21T11:09:34 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_SelectOpenOrder" duration-ms="71616" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:31 IST" name="setup" finished-at="2025-04-03T19:25:31 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_ItemSelection -->
-        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:09:34 IST" name="Login" finished-at="2025-03-21T11:09:34 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="Categories_SetCategoryname()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:31 IST" name="Categories_SetCategoryname" finished-at="2025-04-03T19:25:33 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Categories_CreateCategoriesClick" duration-ms="1386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Categories_SetCategoryname -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:33 IST" name="tearDown" finished-at="2025-04-03T19:25:33 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=OpenOderTest.OpenOrder_AddManualItems()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604] output={null}]]]>
+                <![CDATA[[TestResult name=Categories_SetCategoryname status=SUCCESS method=CategoriesandItemsTest.Categories_SetCategoryname()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="OpenOrder_AddManualItems()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:09:34 IST" name="OpenOrder_AddManualItems" finished-at="2025-03-21T11:09:53 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_ItemSelection" duration-ms="18447" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:33 IST" name="setup" finished-at="2025-04-03T19:25:33 IST" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_AddManualItems -->
-        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:09:53 IST" name="Login" finished-at="2025-03-21T11:09:53 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="Categories_SaveCategory()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:33 IST" name="Categories_SaveCategory" finished-at="2025-04-03T19:25:37 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Categories_SetCategoryname" duration-ms="4373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Categories_SaveCategory -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:37 IST" name="tearDown" finished-at="2025-04-03T19:25:37 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=OpenOderTest.OpenOrder_UpdateItem()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604] output={null}]]]>
+                <![CDATA[[TestResult name=Categories_SaveCategory status=SUCCESS method=CategoriesandItemsTest.Categories_SaveCategory()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="OpenOrder_UpdateItem()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:09:53 IST" name="OpenOrder_UpdateItem" finished-at="2025-03-21T11:10:02 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_AddManualItems" duration-ms="9019" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:37 IST" name="setup" finished-at="2025-04-03T19:25:37 IST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_UpdateItem -->
-        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:02 IST" name="Login" finished-at="2025-03-21T11:10:02 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="Categories_CheckIfCategoryIsAdded()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:37 IST" name="Categories_CheckIfCategoryIsAdded" finished-at="2025-04-03T19:25:46 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Categories_SaveCategory" duration-ms="8447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Categories_CheckIfCategoryIsAdded -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:46 IST" name="tearDown" finished-at="2025-04-03T19:25:46 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=OpenOderTest.OpenOrder_RemoveItem()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604] output={null}]]]>
+                <![CDATA[[TestResult name=Categories_CheckIfCategoryIsAdded status=SUCCESS method=CategoriesandItemsTest.Categories_CheckIfCategoryIsAdded()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="OpenOrder_RemoveItem()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:02 IST" name="OpenOrder_RemoveItem" finished-at="2025-03-21T11:10:04 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_UpdateItem" duration-ms="2073" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:46 IST" name="setup" finished-at="2025-04-03T19:25:46 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_RemoveItem -->
-        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:04 IST" name="Login" finished-at="2025-03-21T11:10:04 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="Modifiers_ClickModifiers()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:46 IST" name="Modifiers_ClickModifiers" finished-at="2025-04-03T19:25:46 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Categories_CheckIfCategoryIsAdded" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Modifiers_ClickModifiers -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:46 IST" name="tearDown" finished-at="2025-04-03T19:25:46 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=OpenOderTest.OpenOrder_SaveOrder()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604] output={null}]]]>
+                <![CDATA[[TestResult name=Modifiers_ClickModifiers status=SUCCESS method=CategoriesandItemsTest.Modifiers_ClickModifiers()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="OpenOrder_SaveOrder()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:04 IST" name="OpenOrder_SaveOrder" finished-at="2025-03-21T11:10:05 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_RemoveItem" duration-ms="1460" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:46 IST" name="setup" finished-at="2025-04-03T19:25:46 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_SaveOrder -->
-        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:05 IST" name="Login" finished-at="2025-03-21T11:10:05 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="Modifiers_ClickCreate()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:46 IST" name="Modifiers_ClickCreate" finished-at="2025-04-03T19:25:47 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Modifiers_ClickModifiers" duration-ms="955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Modifiers_ClickCreate -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:47 IST" name="tearDown" finished-at="2025-04-03T19:25:47 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=OpenOderTest.OpenOrder_CheckOrderType()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604] output={null}]]]>
+                <![CDATA[[TestResult name=Modifiers_ClickCreate status=SUCCESS method=CategoriesandItemsTest.Modifiers_ClickCreate()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="OpenOrder_CheckOrderType()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:05 IST" name="OpenOrder_CheckOrderType" finished-at="2025-03-21T11:10:13 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_SaveOrder" duration-ms="8182" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:47 IST" name="setup" finished-at="2025-04-03T19:25:47 IST" duration-ms="61" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_CheckOrderType -->
-        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:13 IST" name="Login" finished-at="2025-03-21T11:10:13 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="Modifiers_SetModifiersInfo()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:47 IST" name="Modifiers_SetModifiersInfo" finished-at="2025-04-03T19:25:58 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Modifiers_ClickCreate" duration-ms="10699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Modifiers_SetModifiersInfo -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:58 IST" name="tearDown" finished-at="2025-04-03T19:25:58 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=OpenOderTest.OpenOrder_UpdateOrder()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604] output={null}]]]>
+                <![CDATA[[TestResult name=Modifiers_SetModifiersInfo status=SUCCESS method=CategoriesandItemsTest.Modifiers_SetModifiersInfo()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="OpenOrder_UpdateOrder()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:13 IST" name="OpenOrder_UpdateOrder" finished-at="2025-03-21T11:10:17 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_CheckOrderType" duration-ms="3376" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:58 IST" name="setup" finished-at="2025-04-03T19:25:58 IST" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_UpdateOrder -->
-        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:17 IST" name="Login" finished-at="2025-03-21T11:10:17 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="Items_AddItems()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:58 IST" name="Items_AddItems" finished-at="2025-04-03T19:25:59 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Modifiers_SetModifiersInfo" duration-ms="1191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Items_AddItems -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:59 IST" name="tearDown" finished-at="2025-04-03T19:25:59 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=OpenOderTest.OpenOrder_AddOrderNote()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604] output={null}]]]>
+                <![CDATA[[TestResult name=Items_AddItems status=SUCCESS method=CategoriesandItemsTest.Items_AddItems()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="OpenOrder_AddOrderNote()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:17 IST" name="OpenOrder_AddOrderNote" finished-at="2025-03-21T11:10:22 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_UpdateOrder" duration-ms="4881" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:59 IST" name="setup" finished-at="2025-04-03T19:25:59 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_AddOrderNote -->
-        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:22 IST" name="Login" finished-at="2025-03-21T11:10:22 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="Items_SetItem()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:59 IST" name="Items_SetItem" finished-at="2025-04-03T19:26:31 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Items_AddItems" duration-ms="32101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Items_SetItem -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:31 IST" name="tearDown" finished-at="2025-04-03T19:26:31 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=OpenOderTest.OpenOrder_AddDiscount()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604] output={null}]]]>
+                <![CDATA[[TestResult name=Items_SetItem status=SUCCESS method=CategoriesandItemsTest.Items_SetItem()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="OpenOrder_AddDiscount()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:22 IST" name="OpenOrder_AddDiscount" finished-at="2025-03-21T11:10:22 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_AddOrderNote" duration-ms="128" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [91603bf0-d6ee-46b4-97df-8f3987b9be90, findElement {using=id, value=com.pays.pos:id/txtSubTotal}]
-Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: E:\EclipseWorkspace\posfina..., appActivity: com.pays.pos.ui.activities...., appPackage: com.pays.pos, autoGrantPermissions: true, automationName: UIAutomator2, deviceName: LANDI C20pro, newCommandTimeout: 10000, platformName: ANDROID}, appium:deviceApiLevel: 28, appium:deviceManufacturer: SUNMI, appium:deviceModel: T2s, appium:deviceName: TS43223941452, appium:deviceScreenDensity: 230, appium:deviceScreenSize: 1920x1080, appium:deviceUDID: TS43223941452, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 10000, appium:pixelRatio: 1.4375, appium:platformVersion: 9, appium:statBarHeight: 0, appium:takesScreenshot: true, appium:viewportRect: {height: 1080, left: 0, top: 0, width: 1920}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 91603bf0-d6ee-46b4-97df-8f3987b9be90]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [91603bf0-d6ee-46b4-97df-8f3987b9be90, findElement {using=id, value=com.pays.pos:id/txtSubTotal}]
-Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: E:\EclipseWorkspace\posfina..., appActivity: com.pays.pos.ui.activities...., appPackage: com.pays.pos, autoGrantPermissions: true, automationName: UIAutomator2, deviceName: LANDI C20pro, newCommandTimeout: 10000, platformName: ANDROID}, appium:deviceApiLevel: 28, appium:deviceManufacturer: SUNMI, appium:deviceModel: T2s, appium:deviceName: TS43223941452, appium:deviceScreenDensity: 230, appium:deviceScreenSize: 1920x1080, appium:deviceUDID: TS43223941452, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 10000, appium:pixelRatio: 1.4375, appium:platformVersion: 9, appium:statBarHeight: 0, appium:takesScreenshot: true, appium:viewportRect: {height: 1080, left: 0, top: 0, width: 1920}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 91603bf0-d6ee-46b4-97df-8f3987b9be90
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at io.appium.java_client.pagefactory.bys.builder.ByChained.lambda$getSearchingFunction$0(ByChained.java:41)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:72)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:54)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
-at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$HqtrNaFF.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-at Pays.posfinaltesting.actions.TransactionClass.getFormattedValue(TransactionClass.java:202)
-at Pays.posfinaltesting.actions.SetupClass.getSubtotal(SetupClass.java:426)
-at Pays.posfinaltesting.OpenOderTest.OpenOrder_AddDiscount(OpenOderTest.java:176)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:31 IST" name="setup" finished-at="2025-04-03T19:26:31 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_AddDiscount -->
-        <test-method signature="OpenOrder_ChangeOrderType()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:22 IST" name="OpenOrder_ChangeOrderType" finished-at="2025-03-21T11:10:22 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_AddDiscount" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Pays.posfinaltesting.OpenOderTest.OpenOrder_ChangeOrderType() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddDiscount() on instance Pays.posfinaltesting.OpenOderTest@52066604]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_ChangeOrderType() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddDiscount() on instance Pays.posfinaltesting.OpenOderTest@52066604]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- setup -->
+        <test-method signature="Items_Home()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:31 IST" name="Items_Home" finished-at="2025-04-03T19:26:37 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Items_SetItem" duration-ms="5818" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_ChangeOrderType -->
-        <test-method signature="OpenOrder_AddCustomer()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:22 IST" name="OpenOrder_AddCustomer" finished-at="2025-03-21T11:10:22 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_ChangeOrderType" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_ChangeOrderType() on instance Pays.posfinaltesting.OpenOderTest@52066604]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_ChangeOrderType() on instance Pays.posfinaltesting.OpenOderTest@52066604]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- Items_Home -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:37 IST" name="tearDown" finished-at="2025-04-03T19:26:37 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Items_Home status=SUCCESS method=CategoriesandItemsTest.Items_Home()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_AddCustomer -->
-        <test-method signature="OpenOrder_Loyalty_AppliedLoyaltyPoint()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:22 IST" name="OpenOrder_Loyalty_AppliedLoyaltyPoint" finished-at="2025-03-21T11:10:22 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Loyalty_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@52066604]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Loyalty_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@52066604]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:37 IST" name="setup" finished-at="2025-04-03T19:26:37 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_Loyalty_AppliedLoyaltyPoint -->
-        <test-method signature="OpenOrder_Transaction()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:22 IST" name="OpenOrder_Transaction" finished-at="2025-03-21T11:10:22 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer" duration-ms="1" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Transaction() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@52066604]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Transaction() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_AddCustomer() on instance Pays.posfinaltesting.OpenOderTest@52066604]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- setup -->
+        <test-method signature="Items_SelectPay()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:37 IST" name="Items_SelectPay" finished-at="2025-04-03T19:26:41 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Items_Home" duration-ms="3790" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_Transaction -->
-        <test-method signature="OpenOrder_Tip_AddTip()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:22 IST" name="OpenOrder_Tip_AddTip" finished-at="2025-03-21T11:10:22 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_Transaction" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Tip_AddTip() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Transaction() on instance Pays.posfinaltesting.OpenOderTest@52066604]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Tip_AddTip() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Transaction() on instance Pays.posfinaltesting.OpenOderTest@52066604]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- Items_SelectPay -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:41 IST" name="tearDown" finished-at="2025-04-03T19:26:41 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Items_SelectPay status=SUCCESS method=CategoriesandItemsTest.Items_SelectPay()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_Tip_AddTip -->
-        <test-method signature="OpenOrder_Card_FinalWayPayment()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:22 IST" name="OpenOrder_Card_FinalWayPayment" finished-at="2025-03-21T11:10:22 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_Tip_AddTip" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_FinalWayPayment() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Tip_AddTip() on instance Pays.posfinaltesting.OpenOderTest@52066604]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_FinalWayPayment() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Tip_AddTip() on instance Pays.posfinaltesting.OpenOderTest@52066604]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:41 IST" name="setup" finished-at="2025-04-03T19:26:41 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_Card_FinalWayPayment -->
-        <test-method signature="OpenOrder_Card_Refund_SelectRefund()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:22 IST" name="OpenOrder_Card_Refund_SelectRefund" finished-at="2025-03-21T11:10:22 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_FinalWayPayment" duration-ms="5" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_SelectRefund() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_FinalWayPayment() on instance Pays.posfinaltesting.OpenOderTest@52066604]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_SelectRefund() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_FinalWayPayment() on instance Pays.posfinaltesting.OpenOderTest@52066604]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- setup -->
+        <test-method signature="Items_Transaction()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:41 IST" name="Items_Transaction" finished-at="2025-04-03T19:27:09 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Items_SelectPay" duration-ms="28197" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_Card_Refund_SelectRefund -->
-        <test-method signature="OpenOrder_Card_Refund_PrintReceipt()[pri:0, instance:Pays.posfinaltesting.OpenOderTest@52066604]" started-at="2025-03-21T11:10:22 IST" name="OpenOrder_Card_Refund_PrintReceipt" finished-at="2025-03-21T11:10:22 IST" depends-on-methods="Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_SelectRefund" duration-ms="2" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_PrintReceipt() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_SelectRefund() on instance Pays.posfinaltesting.OpenOderTest@52066604]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_PrintReceipt() on instance Pays.posfinaltesting.OpenOderTest@52066604 depends on not successfully finished methods 
-[Pays.posfinaltesting.OpenOderTest.OpenOrder_Card_Refund_SelectRefund() on instance Pays.posfinaltesting.OpenOderTest@52066604]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- Items_Transaction -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:09 IST" name="tearDown" finished-at="2025-04-03T19:27:11 IST" duration-ms="2014" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Items_Transaction status=SUCCESS method=CategoriesandItemsTest.Items_Transaction()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenOrder_Card_Refund_PrintReceipt -->
-      </class> <!-- Pays.posfinaltesting.OpenOderTest -->
-    </test> <!-- Card_RefundPaymentTest -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:11 IST" name="setup" finished-at="2025-04-03T19:27:11 IST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DeleteCategory_Select_Categories()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:11 IST" name="DeleteCategory_Select_Categories" finished-at="2025-04-03T19:27:23 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Items_Transaction" duration-ms="12334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteCategory_Select_Categories -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:23 IST" name="tearDown" finished-at="2025-04-03T19:27:23 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DeleteCategory_Select_Categories status=SUCCESS method=CategoriesandItemsTest.DeleteCategory_Select_Categories()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:23 IST" name="setup" finished-at="2025-04-03T19:27:23 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DeleteCategory_DeleteCategory()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:23 IST" name="DeleteCategory_DeleteCategory" finished-at="2025-04-03T19:27:29 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.DeleteCategory_Select_Categories" duration-ms="5643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteCategory_DeleteCategory -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:29 IST" name="tearDown" finished-at="2025-04-03T19:27:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DeleteCategory_DeleteCategory status=SUCCESS method=CategoriesandItemsTest.DeleteCategory_DeleteCategory()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:29 IST" name="setup" finished-at="2025-04-03T19:27:29 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DeleteItem_ClickItem()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:29 IST" name="DeleteItem_ClickItem" finished-at="2025-04-03T19:27:29 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.DeleteCategory_DeleteCategory" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteItem_ClickItem -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:29 IST" name="tearDown" finished-at="2025-04-03T19:27:29 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DeleteItem_ClickItem status=SUCCESS method=CategoriesandItemsTest.DeleteItem_ClickItem()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:29 IST" name="setup" finished-at="2025-04-03T19:27:29 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DeleteItem_DeleteItems()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:29 IST" name="DeleteItem_DeleteItems" finished-at="2025-04-03T19:28:08 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.DeleteItem_ClickItem" duration-ms="38800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteItem_DeleteItems -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:28:08 IST" name="tearDown" finished-at="2025-04-03T19:28:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DeleteItem_DeleteItems status=SUCCESS method=CategoriesandItemsTest.DeleteItem_DeleteItems()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:28:08 IST" name="setup" finished-at="2025-04-03T19:28:08 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DeleteModifiers_ClickModifiers()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:28:08 IST" name="DeleteModifiers_ClickModifiers" finished-at="2025-04-03T19:28:08 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.DeleteItem_DeleteItems" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteModifiers_ClickModifiers -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:28:08 IST" name="tearDown" finished-at="2025-04-03T19:28:08 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DeleteModifiers_ClickModifiers status=SUCCESS method=CategoriesandItemsTest.DeleteModifiers_ClickModifiers()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:28:08 IST" name="setup" finished-at="2025-04-03T19:28:08 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DeleteModifier_SelectModifier()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:28:08 IST" name="DeleteModifier_SelectModifier" finished-at="2025-04-03T19:28:13 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.DeleteModifiers_ClickModifiers" duration-ms="4357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteModifier_SelectModifier -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:28:13 IST" name="tearDown" finished-at="2025-04-03T19:28:13 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DeleteModifier_SelectModifier status=SUCCESS method=CategoriesandItemsTest.DeleteModifier_SelectModifier()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Pays.posfinaltesting.CategoriesandItemsTest -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

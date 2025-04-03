@@ -155,5 +155,46 @@ public class CategoriesandItemsTest extends BaseTest {
         boolean result = tc.performCashTransaction();
         assert result : "Function did not return true!";
     }
+    
+    // ---------------------- Deletectegory TEST CASE ----------------------
+    @Test(dependsOnMethods ="Items_Transaction")
+    public void DeleteCategory_Select_Categories() throws InterruptedException {
+        category.MenuBurgerClick();
+        category.MenuButtonClick();
+        category.ClickCategories();
+        category.scrollToElement("French");
+    }
+    @Test(dependsOnMethods ="DeleteCategory_Select_Categories")
+    public void DeleteCategory_DeleteCategory() {
+      
+        category.deleteitems("French");
+    }
+   
+    
+ // ---------------------- DeleteModifier TEST CASE ----------------------
+    @Test(dependsOnMethods = "DeleteCategory_DeleteCategory")
+    public void DeleteItem_ClickItem() throws InterruptedException {
+    	
+    	  items.ClickItems();  
 
+    }
+    
+    @Test(dependsOnMethods ="DeleteItem_ClickItem")
+    public void DeleteItem_DeleteItems() {
+        category.scrollToElement("Pineapple");
+        category.deleteitems("Pineapple");
+    }
+    // ---------------------- DeleteModifier TEST CASE ----------------------
+    @Test(dependsOnMethods = "DeleteItem_DeleteItems")
+    public void DeleteModifiers_ClickModifiers() throws InterruptedException {
+    	
+        modifiers.ClickModifiers();
+
+    }
+    
+    @Test(dependsOnMethods ="DeleteModifiers_ClickModifiers")
+    public void DeleteModifier_SelectModifier() {
+     
+        modifiers.deleteModifier();
+    }
 }
