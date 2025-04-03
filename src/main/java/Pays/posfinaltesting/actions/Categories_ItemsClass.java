@@ -26,6 +26,9 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import com.google.common.collect.ImmutableMap;
+
+import Pays.posfinaltest.pageobjectlocators.Categories_ItemsPageObject;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -34,54 +37,19 @@ public class Categories_ItemsClass {
 	private AppiumDriver driver;
 	private AndroidDriver drive;
 	private WebDriverWait wait;
+	private Categories_ItemsPageObject menu;
 
 	// Constructor
 	public Categories_ItemsClass(AppiumDriver driver) {
 		this.driver = driver;
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		this.drive = (AndroidDriver) driver;// Explicit wait of 10 sec
+		this.drive = (AndroidDriver) driver;
+		this.menu = new Categories_ItemsPageObject(driver);// Explicit wait of 10 sec
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 
-	@AndroidFindBy(id = "com.pays.pos:id/imgDrawer")
-	private WebElement MenuBurgerButton; // Menu burger button to open the navigation drawer
-
-	@AndroidFindBy(id = "com.pays.pos:id/linearInventory")
-	private WebElement MenuButton; // Menu button to access inventory options
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.pays.pos:id/txt_title' and @text='Categories']")
-	private WebElement CategoriesButton; // Button to navigate to the "Categories" section
-
-	@AndroidFindBy(id = "com.pays.pos:id/txtCreatecatagory")
-	private WebElement createCategory; // Button to create a new category
-
-	@AndroidFindBy(id = "com.pays.pos:id/etCategoryName")
-	private WebElement AddCategoryName; // Input field to enter a new category name
-
-	@AndroidFindBy(id = "com.pays.pos:id/txtSave")
-	private WebElement SaveButton; // Button to save the new category
-
-	@AndroidFindBy(id = "com.pays.pos:id/txtCreateItem")
-	private WebElement AddItem; // Button to add a new item
-
-	@AndroidFindBy(id = "com.pays.pos:id/txtDone")
-	private WebElement ItemDone; // Button to confirm item addition
-
-	@AndroidFindBy(id = "com.pays.pos:id/etItemPrice")
-	private WebElement ItemPrice; // Input field to set item price
-
-	@AndroidFindBy(id = "com.pays.pos:id/etStock")
-	private WebElement Quantity; // Input field to enter item quantity
-
-	@AndroidFindBy(id = "com.pays.pos:id/tvPayNow")
-	private WebElement Pay; // Button to proceed with payment
 	
-	@AndroidFindBy(id="com.pays.pos:id/txtcreatemodifieer")
-	private WebElement CreateModifier;
-	
-	@AndroidFindBy(id="android:id/text1")
-	private WebElement SelectModifier;
 
 	
 	// Method to click on the Menu Burger button after scrolling to "Sell Card"
@@ -94,37 +62,37 @@ public class Categories_ItemsClass {
 						+ ".scrollIntoView(new UiSelector().resourceId(\"com.pays.pos:id/txtCategoryName\").text(\"Sell Card\"))")));
 
 		// Click on the Menu Burger button to open the menu
-		wait.until(ExpectedConditions.elementToBeClickable(MenuBurgerButton)).click();
+		wait.until(ExpectedConditions.elementToBeClickable(menu.MenuBurgerButton)).click();
 	}
 
 	// Method to click on the Menu button (Inventory section)
 	public void MenuButtonClick() {
-		wait.until(ExpectedConditions.elementToBeClickable(MenuButton)).click(); // Clicks on the Inventory Menu button
+		wait.until(ExpectedConditions.elementToBeClickable(menu.MenuButton)).click(); // Clicks on the Inventory Menu button
 	}
 
 	// Method to navigate to the "Categories" section in the menu
 	public void ClickCategories() {
-		WebElement categoriesButton = wait.until(ExpectedConditions.elementToBeClickable(AppiumBy
+		WebElement categories = wait.until(ExpectedConditions.elementToBeClickable(AppiumBy
 				.xpath("//android.widget.TextView[@resource-id='com.pays.pos:id/txt_title' and @text='Categories']")));
-		categoriesButton.click(); // Clicks on the "Categories" option
+		categories.click(); // Clicks on the "Categories" option
 	}
 
 	// Method to initiate category creation
 	public void CreateCategory() {
-		WebElement createcat = wait.until(ExpectedConditions.elementToBeClickable(createCategory));
+		WebElement createcat = wait.until(ExpectedConditions.elementToBeClickable(menu.createCategory));
 		createcat.click(); // Clicks on the "Create Category" button
 	}
 
 	// Method to enter the category name in the input field
 	public void SetcategoryName(String CategoryName) {
-		WebElement categoryName = wait.until(ExpectedConditions.visibilityOf(AddCategoryName));
+		WebElement categoryName = wait.until(ExpectedConditions.visibilityOf(menu.AddCategoryName));
 		categoryName.sendKeys(CategoryName); // Sets the category name
 	}
 
 	// Method to save the created category
 	public void SaveCategory() {
 		// Wait for the save button to be clickable and click it
-		wait.until(ExpectedConditions.elementToBeClickable(SaveButton)).click();
+		wait.until(ExpectedConditions.elementToBeClickable(menu.SaveButton)).click();
 
 		// Wait for the pop-up message to appear
 		WebElement popUpMessage = wait.until(ExpectedConditions.presenceOfElementLocated(AppiumBy
@@ -172,7 +140,7 @@ public class Categories_ItemsClass {
 
 	// Method to add a new item
 	public void AddItem() {
-		WebElement createcat = wait.until(ExpectedConditions.elementToBeClickable(AddItem));
+		WebElement createcat = wait.until(ExpectedConditions.elementToBeClickable(menu.AddItem));
 		createcat.click(); // Clicks on the "Add Item" button
 	}
 
@@ -206,26 +174,26 @@ public class Categories_ItemsClass {
 		}
 
 		// Click the "Done" button after selecting the category
-		wait.until(ExpectedConditions.elementToBeClickable(ItemDone)).click();
+		wait.until(ExpectedConditions.elementToBeClickable(menu.ItemDone)).click();
 
 		// Scroll to the "Quantity" field before entering details
-		WebElement Price = scrollToText("Quantity");
+		WebElement Price = scrollToText("SKU");
 
 		// Enter item price
-		wait.until(ExpectedConditions.elementToBeClickable(ItemPrice)).sendKeys("6.45");
-
+		wait.until(ExpectedConditions.elementToBeClickable(menu.ItemPrice)).sendKeys("6.45");
+		WebElement scroll = scrollToText("Modifier sets");
 		// Enter item quantity
-		wait.until(ExpectedConditions.elementToBeClickable(Quantity)).sendKeys("1");
+		wait.until(ExpectedConditions.elementToBeClickable(menu.Quantity)).sendKeys("1");
 		
-		WebElement scroll = scrollToText("Description");
-		wait.until(ExpectedConditions.elementToBeClickable(SelectModifier)).click();
+	
+		wait.until(ExpectedConditions.elementToBeClickable(menu.SelectModifier)).click();
 		wait.until(ExpectedConditions.elementToBeClickable(
 			    AppiumBy.xpath("//android.widget.CheckedTextView[@resource-id='android:id/text1' and @text='Shape']")
 			)).click();
 
 			
 		// Click save to finalize item creation
-		wait.until(ExpectedConditions.elementToBeClickable(SaveButton)).click();
+		wait.until(ExpectedConditions.elementToBeClickable(menu.SaveButton)).click();
 
 		// Wait for pop-up confirmation message
 		WebElement popUpMessage = wait.until(ExpectedConditions.presenceOfElementLocated(AppiumBy
@@ -433,7 +401,7 @@ public class Categories_ItemsClass {
 	public void Paynow() {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-			WebElement payButton = wait.until(ExpectedConditions.visibilityOf(Pay));
+			WebElement payButton = wait.until(ExpectedConditions.visibilityOf(menu.Pay));
 			payButton.click();
 			System.out.println("Pay button clicked.");
 
@@ -443,7 +411,7 @@ public class Categories_ItemsClass {
 	}
 
 	public void backtohome() {
-		wait.until(ExpectedConditions.visibilityOf(SaveButton)).click();
+		wait.until(ExpectedConditions.visibilityOf(menu.SaveButton)).click();
 	}
 	
 	
@@ -455,7 +423,7 @@ public class Categories_ItemsClass {
 	}
 	
 	public void CreateModifiers() {
-		WebElement createmod = wait.until(ExpectedConditions.elementToBeClickable(CreateModifier));
+		WebElement createmod = wait.until(ExpectedConditions.elementToBeClickable(menu.CreateModifier));
 		createmod.click(); 
 
 	}
@@ -489,7 +457,7 @@ public class Categories_ItemsClass {
 	    // Hide keyboard after typing
 	    drive.hideKeyboard();
 	    // Click save to finalize item creation
-			wait.until(ExpectedConditions.elementToBeClickable(SaveButton)).click();
+			wait.until(ExpectedConditions.elementToBeClickable(menu.SaveButton)).click();
 
 			// Wait for pop-up confirmation message
 			WebElement popUpMessage = wait.until(ExpectedConditions.presenceOfElementLocated(AppiumBy
@@ -514,12 +482,65 @@ public class Categories_ItemsClass {
 					));
 			okButton.click();
 
-
+	}
 //		WebElement modifierField1 = wait.until(ExpectedConditions.visibilityOfElementLocated(
 //		    AppiumBy.xpath("//android.widget.EditText[@resource-id='com.pays.pos:id/edtModifier' and @text='Modifier']")
 //		));
 //		modifierField1.sendKeys("hi");
 
+	public void deleteitems(String  ItemName) {
+		// Locate the element with text "French"
+		WebElement element = driver.findElement(AppiumBy.androidUIAutomator(
+			    "new UiSelector().text(\"" + ItemName + "\").fromParent(new UiSelector().resourceId(\"com.pays.pos:id/layout_menu\"))"
+			));
 
+		// Click the menu button associated with "French"
+		element.click();
+
+		WebElement deleteButton = driver.findElement(
+				AppiumBy.xpath("(//android.widget.LinearLayout[@resource-id=\"com.pays.pos:id/content\"])[2]"));
+		deleteButton.click();
+		WebElement popUpMessage = wait.until(ExpectedConditions.presenceOfElementLocated(
+                AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.LinearLayout\").instance(1)")
+        ));
+		 WebElement okButton = wait.until(ExpectedConditions.presenceOfElementLocated(
+	                AppiumBy.id("com.pays.pos:id/tvSave")
+	        ));
+	        okButton.click();
+	        WebElement popUpMessages = wait.until(ExpectedConditions.presenceOfElementLocated(
+	                AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.LinearLayout\").instance(1)")
+	        ));
+			 WebElement okButtons = wait.until(ExpectedConditions.presenceOfElementLocated(
+		                AppiumBy.id("com.pays.pos:id/tvSave")
+		        ));
+		        okButtons.click();
+	        
+	}
+	
+	public void deleteModifier() {
+		// Locate the delete button inside the same LinearLayout as the "Shape" text
+		// Find the delete button using fromParent() to locate it inside the same layout as "Shape"
+		WebElement deleteButton = driver.findElement(AppiumBy.xpath(
+                       "(//android.widget.ImageView[@resource-id=\"com.pays.pos:id/imgDelete\"])[3]"
+		));
+
+		// Click the delete button
+		deleteButton.click();
+
+		
+		WebElement popUpMessage = wait.until(ExpectedConditions.presenceOfElementLocated(
+                AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.LinearLayout\").instance(1)")
+        ));
+		 WebElement okButton = wait.until(ExpectedConditions.presenceOfElementLocated(
+	                AppiumBy.id("com.pays.pos:id/tvSave")
+	        ));
+	        okButton.click();
+	        WebElement popUpMessages = wait.until(ExpectedConditions.presenceOfElementLocated(
+	                AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.LinearLayout\").instance(1)")
+	        ));
+			 WebElement okButtons = wait.until(ExpectedConditions.presenceOfElementLocated(
+		                AppiumBy.id("com.pays.pos:id/tvSave")
+		        ));
+		        okButtons.click();
 	}
 }

@@ -5,33 +5,35 @@
     <listener class-name="Pays.posfinaltesting.resources.Listeners"/>
     <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
   </listeners>
-  <test thread-count="5" name="Card_RefundPaymentTest(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Pays.posfinaltesting.OpenOderTest">
+      <class name="Pays.posfinaltesting.CategoriesandItemsTest">
         <methods>
-          <include name="OpenOrder_UpdateItem"/>
-          <include name="OpenOrder_Transaction"/>
-          <include name="OpenOrder_SaveOrder"/>
+          <include name="Categories_SaveCategory"/>
+          <include name="setup"/>
+          <include name="DeleteItem_DeleteItems"/>
+          <include name="Modifiers_ClickModifiers"/>
+          <include name="Items_SetItem"/>
           <include name="ConfigureAppium"/>
-          <include name="OpenOrder_AddOrderNote"/>
-          <include name="OpenOrder_RemoveItem"/>
-          <include name="OpenOrder_ChangeOrderType"/>
+          <include name="DeleteCategory_DeleteCategory"/>
+          <include name="Modifiers_ClickCreate"/>
+          <include name="Items_Home"/>
+          <include name="DeleteModifier_SelectModifier"/>
+          <include name="DeleteItem_ClickItem"/>
+          <include name="DeleteCategory_Select_Categories"/>
+          <include name="Categories_CheckIfCategoryIsAdded"/>
+          <include name="Items_AddItems"/>
           <include name="Login"/>
-          <include name="OpenOrder_AddManualItems"/>
-          <include name="OpenOrder_Setup"/>
-          <include name="OpenOrder_AddDiscount"/>
-          <include name="OpenOrder_CheckOrderType"/>
-          <include name="OpenOrder_Card_Refund_SelectRefund"/>
-          <include name="OpenOrder_AddCustomer"/>
-          <include name="OpenOrder_Card_FinalWayPayment"/>
-          <include name="OpenOrder_Card_Refund_PrintReceipt"/>
-          <include name="OpenOrder_UpdateOrder"/>
-          <include name="OpenOrder_Loyalty_AppliedLoyaltyPoint"/>
-          <include name="OpenOrder_Tip_AddTip"/>
-          <include name="OpenOrder_ItemSelection"/>
-          <include name="OpenOrder_SelectOpenOrder"/>
+          <include name="tearDown"/>
+          <include name="DeleteModifiers_ClickModifiers"/>
+          <include name="Categories_CreateCategoriesClick"/>
+          <include name="Items_SelectPay"/>
+          <include name="Categories_SetCategoryname"/>
+          <include name="Modifiers_SetModifiersInfo"/>
+          <include name="Items_Transaction"/>
+          <include name="Categories_Select_Categories"/>
         </methods>
-      </class> <!-- Pays.posfinaltesting.OpenOderTest -->
+      </class> <!-- Pays.posfinaltesting.CategoriesandItemsTest -->
     </classes>
-  </test> <!-- Card_RefundPaymentTest(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

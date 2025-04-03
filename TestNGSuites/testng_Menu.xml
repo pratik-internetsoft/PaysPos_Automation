@@ -10,9 +10,7 @@
   <test  name="Test">
     <classes>
 
-
-      <class name="Pays.posfinaltesting.PrinterTest"/>
-            <class name="Pays.posfinaltesting.CategoriesandItemsTest"/>
+       <class name="Pays.posfinaltesting.CategoriesandItemsTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
