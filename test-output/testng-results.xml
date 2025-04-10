@@ -1,416 +1,1604 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
+<testng-results ignored="0" total="59" passed="30" failed="3" skipped="26">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-03T19:24:53 IST" name="Suite" finished-at="2025-04-03T19:28:13 IST" duration-ms="199368">
+  <suite started-at="2025-04-03T20:59:37 IST" name="Suite" finished-at="2025-04-03T21:08:44 IST" duration-ms="546988">
     <groups>
-      <group name="categories">
-        <method signature="CategoriesandItemsTest.Categories_Select_Categories()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Categories_Select_Categories" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
-        <method signature="CategoriesandItemsTest.Categories_CreateCategoriesClick()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Categories_CreateCategoriesClick" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
-        <method signature="CategoriesandItemsTest.Categories_SetCategoryname()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Categories_SetCategoryname" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
-        <method signature="CategoriesandItemsTest.Categories_SaveCategory()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Categories_SaveCategory" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
-        <method signature="CategoriesandItemsTest.Categories_CheckIfCategoryIsAdded()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Categories_CheckIfCategoryIsAdded" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
-      </group> <!-- categories -->
-      <group name="login">
-        <method signature="CategoriesandItemsTest.Login()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Login" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
-      </group> <!-- login -->
-      <group name="items">
-        <method signature="CategoriesandItemsTest.Items_AddItems()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Items_AddItems" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
-        <method signature="CategoriesandItemsTest.Items_SetItem()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Items_SetItem" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
-        <method signature="CategoriesandItemsTest.Items_Home()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Items_Home" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
-        <method signature="CategoriesandItemsTest.Items_SelectPay()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Items_SelectPay" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
-      </group> <!-- items -->
-      <group name="transaction">
-        <method signature="CategoriesandItemsTest.Items_Transaction()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" name="Items_Transaction" class="Pays.posfinaltesting.CategoriesandItemsTest"/>
-      </group> <!-- transaction -->
     </groups>
-    <test started-at="2025-04-03T19:24:53 IST" name="Test" finished-at="2025-04-03T19:28:13 IST" duration-ms="199368">
-      <class name="Pays.posfinaltesting.CategoriesandItemsTest">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:24:53 IST" name="ConfigureAppium" finished-at="2025-04-03T19:25:04 IST" duration-ms="10656" status="PASS">
+    <test started-at="2025-04-03T20:59:37 IST" name="TakeOut_Card_Refund" finished-at="2025-04-03T21:04:06 IST" duration-ms="268813">
+      <class name="Pays.posfinaltesting.TakeOutTest">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T20:59:37 IST" name="ConfigureAppium" finished-at="2025-04-03T20:59:50 IST" duration-ms="12474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:04 IST" name="setup" finished-at="2025-04-03T19:25:04 IST" duration-ms="417" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Login()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:04 IST" name="Login" finished-at="2025-04-03T19:25:19 IST" duration-ms="14403" status="PASS">
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T20:59:50 IST" name="Login" finished-at="2025-04-03T21:00:15 IST" duration-ms="25105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_Setup()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:19 IST" name="tearDown" finished-at="2025-04-03T19:25:19 IST" duration-ms="3" status="PASS">
+        <test-method signature="TakeOut_Setup()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:00:15 IST" name="TakeOut_Setup" finished-at="2025-04-03T21:00:15 IST" duration-ms="321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_Setup -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:00:15 IST" name="Login" finished-at="2025-04-03T21:00:15 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login status=SUCCESS method=CategoriesandItemsTest.Login()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_SelectTakeout()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:19 IST" name="setup" finished-at="2025-04-03T19:25:19 IST" duration-ms="23" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_SelectTakeout()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:00:15 IST" name="TakeOut_SelectTakeout" finished-at="2025-04-03T21:00:25 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_Setup" duration-ms="9913" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Categories_Select_Categories()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:19 IST" name="Categories_Select_Categories" finished-at="2025-04-03T19:25:30 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Login" duration-ms="11370" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Categories_Select_Categories -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:30 IST" name="tearDown" finished-at="2025-04-03T19:25:30 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- TakeOut_SelectTakeout -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:00:25 IST" name="Login" finished-at="2025-04-03T21:00:25 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Categories_Select_Categories status=SUCCESS method=CategoriesandItemsTest.Categories_Select_Categories()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_ItemSelection()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:30 IST" name="setup" finished-at="2025-04-03T19:25:30 IST" duration-ms="29" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_ItemSelection()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:00:25 IST" name="TakeOut_ItemSelection" finished-at="2025-04-03T21:01:44 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_SelectTakeout" duration-ms="78314" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Categories_CreateCategoriesClick()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:30 IST" name="Categories_CreateCategoriesClick" finished-at="2025-04-03T19:25:31 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Categories_Select_Categories" duration-ms="1063" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Categories_CreateCategoriesClick -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:31 IST" name="tearDown" finished-at="2025-04-03T19:25:31 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- TakeOut_ItemSelection -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:01:44 IST" name="Login" finished-at="2025-04-03T21:01:44 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Categories_CreateCategoriesClick status=SUCCESS method=CategoriesandItemsTest.Categories_CreateCategoriesClick()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_AddManualItems()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:31 IST" name="setup" finished-at="2025-04-03T19:25:31 IST" duration-ms="23" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_AddManualItems()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:01:44 IST" name="TakeOut_AddManualItems" finished-at="2025-04-03T21:01:58 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_ItemSelection" duration-ms="13990" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Categories_SetCategoryname()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:31 IST" name="Categories_SetCategoryname" finished-at="2025-04-03T19:25:33 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Categories_CreateCategoriesClick" duration-ms="1386" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Categories_SetCategoryname -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:33 IST" name="tearDown" finished-at="2025-04-03T19:25:33 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- TakeOut_AddManualItems -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:01:58 IST" name="Login" finished-at="2025-04-03T21:01:58 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Categories_SetCategoryname status=SUCCESS method=CategoriesandItemsTest.Categories_SetCategoryname()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_UpdateItem()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:33 IST" name="setup" finished-at="2025-04-03T19:25:33 IST" duration-ms="31" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_UpdateItem()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:01:58 IST" name="TakeOut_UpdateItem" finished-at="2025-04-03T21:02:13 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AddManualItems" duration-ms="15354" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Categories_SaveCategory()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:33 IST" name="Categories_SaveCategory" finished-at="2025-04-03T19:25:37 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Categories_SetCategoryname" duration-ms="4373" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Categories_SaveCategory -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:37 IST" name="tearDown" finished-at="2025-04-03T19:25:37 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- TakeOut_UpdateItem -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:02:13 IST" name="Login" finished-at="2025-04-03T21:02:13 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Categories_SaveCategory status=SUCCESS method=CategoriesandItemsTest.Categories_SaveCategory()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_RemoveItem()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:37 IST" name="setup" finished-at="2025-04-03T19:25:37 IST" duration-ms="27" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_RemoveItem()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:02:13 IST" name="TakeOut_RemoveItem" finished-at="2025-04-03T21:02:17 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_UpdateItem" duration-ms="4111" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Categories_CheckIfCategoryIsAdded()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:37 IST" name="Categories_CheckIfCategoryIsAdded" finished-at="2025-04-03T19:25:46 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Categories_SaveCategory" duration-ms="8447" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Categories_CheckIfCategoryIsAdded -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:46 IST" name="tearDown" finished-at="2025-04-03T19:25:46 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- TakeOut_RemoveItem -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:02:17 IST" name="Login" finished-at="2025-04-03T21:02:17 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Categories_CheckIfCategoryIsAdded status=SUCCESS method=CategoriesandItemsTest.Categories_CheckIfCategoryIsAdded()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_SaveOrder()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:46 IST" name="setup" finished-at="2025-04-03T19:25:46 IST" duration-ms="21" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_SaveOrder()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:02:17 IST" name="TakeOut_SaveOrder" finished-at="2025-04-03T21:02:19 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_UpdateItem" duration-ms="2297" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Modifiers_ClickModifiers()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:46 IST" name="Modifiers_ClickModifiers" finished-at="2025-04-03T19:25:46 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Categories_CheckIfCategoryIsAdded" duration-ms="200" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Modifiers_ClickModifiers -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:46 IST" name="tearDown" finished-at="2025-04-03T19:25:46 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- TakeOut_SaveOrder -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:02:19 IST" name="Login" finished-at="2025-04-03T21:02:19 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Modifiers_ClickModifiers status=SUCCESS method=CategoriesandItemsTest.Modifiers_ClickModifiers()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_CheckOrderType()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:46 IST" name="setup" finished-at="2025-04-03T19:25:46 IST" duration-ms="20" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_CheckOrderType()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:02:19 IST" name="TakeOut_CheckOrderType" finished-at="2025-04-03T21:02:25 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_SaveOrder" duration-ms="5341" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Modifiers_ClickCreate()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:46 IST" name="Modifiers_ClickCreate" finished-at="2025-04-03T19:25:47 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Modifiers_ClickModifiers" duration-ms="955" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Modifiers_ClickCreate -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:47 IST" name="tearDown" finished-at="2025-04-03T19:25:47 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- TakeOut_CheckOrderType -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:02:25 IST" name="Login" finished-at="2025-04-03T21:02:25 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Modifiers_ClickCreate status=SUCCESS method=CategoriesandItemsTest.Modifiers_ClickCreate()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.Takeout_UpdateOrder()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:47 IST" name="setup" finished-at="2025-04-03T19:25:47 IST" duration-ms="61" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="Takeout_UpdateOrder()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:02:25 IST" name="Takeout_UpdateOrder" finished-at="2025-04-03T21:02:27 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_CheckOrderType" duration-ms="2439" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Modifiers_SetModifiersInfo()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:47 IST" name="Modifiers_SetModifiersInfo" finished-at="2025-04-03T19:25:58 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Modifiers_ClickCreate" duration-ms="10699" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Modifiers_SetModifiersInfo -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:58 IST" name="tearDown" finished-at="2025-04-03T19:25:58 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Takeout_UpdateOrder -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:02:27 IST" name="Login" finished-at="2025-04-03T21:02:27 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Modifiers_SetModifiersInfo status=SUCCESS method=CategoriesandItemsTest.Modifiers_SetModifiersInfo()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_AddOrderNote()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:58 IST" name="setup" finished-at="2025-04-03T19:25:58 IST" duration-ms="37" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_AddOrderNote()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:02:27 IST" name="TakeOut_AddOrderNote" finished-at="2025-04-03T21:02:36 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.Takeout_UpdateOrder" duration-ms="8523" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Items_AddItems()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:58 IST" name="Items_AddItems" finished-at="2025-04-03T19:25:59 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Modifiers_SetModifiersInfo" duration-ms="1191" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Items_AddItems -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:59 IST" name="tearDown" finished-at="2025-04-03T19:25:59 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- TakeOut_AddOrderNote -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:02:36 IST" name="Login" finished-at="2025-04-03T21:02:36 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Items_AddItems status=SUCCESS method=CategoriesandItemsTest.Items_AddItems()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_AddDiscount()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:59 IST" name="setup" finished-at="2025-04-03T19:25:59 IST" duration-ms="21" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_AddDiscount()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:02:36 IST" name="TakeOut_AddDiscount" finished-at="2025-04-03T21:02:47 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote" duration-ms="11386" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Items_SetItem()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:25:59 IST" name="Items_SetItem" finished-at="2025-04-03T19:26:31 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Items_AddItems" duration-ms="32101" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Items_SetItem -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:31 IST" name="tearDown" finished-at="2025-04-03T19:26:31 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- TakeOut_AddDiscount -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:02:47 IST" name="Login" finished-at="2025-04-03T21:02:47 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Items_SetItem status=SUCCESS method=CategoriesandItemsTest.Items_SetItem()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_ChangeOrderType()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:31 IST" name="setup" finished-at="2025-04-03T19:26:31 IST" duration-ms="24" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_ChangeOrderType()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:02:47 IST" name="TakeOut_ChangeOrderType" finished-at="2025-04-03T21:02:55 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote" duration-ms="8118" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Items_Home()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:31 IST" name="Items_Home" finished-at="2025-04-03T19:26:37 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Items_SetItem" duration-ms="5818" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Items_Home -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:37 IST" name="tearDown" finished-at="2025-04-03T19:26:37 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- TakeOut_ChangeOrderType -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:02:55 IST" name="Login" finished-at="2025-04-03T21:02:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Items_Home status=SUCCESS method=CategoriesandItemsTest.Items_Home()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_AddCustomer()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:37 IST" name="setup" finished-at="2025-04-03T19:26:37 IST" duration-ms="19" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_AddCustomer()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:02:55 IST" name="TakeOut_AddCustomer" finished-at="2025-04-03T21:04:06 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType" duration-ms="70231" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: AppiumBy.androidUIAutomator: new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().resourceId("com.pays.pos:id/txtPhone").text("(292) 119-7050")) (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: AppiumBy.androidUIAutomator: new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().resourceId("com.pays.pos:id/txtPhone").text("(292) 119-7050")) (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at Pays.posfinaltesting.actions.TakeOutClass.scrollToPhoneNumberAndClick(TakeOutClass.java:42)
+at Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer(TakeOutTest.java:224)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [87872b71-e265-4b9b-9b80-d0128dd69790, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().resourceId("com.pays.pos:id/txtPhone").text("(292) 119-7050"))}]
+Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: E:\EclipseWorkspace\posfina..., appActivity: com.pays.pos.ui.activities...., appPackage: com.pays.pos, autoGrantPermissions: true, automationName: UIAutomator2, deviceName: LANDI C20pro, newCommandTimeout: 10000, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 2560x1600, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 10000, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 48, appium:takesScreenshot: true, appium:viewportRect: {height: 1552, left: 0, top: 48, width: 2560}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 87872b71-e265-4b9b-9b80-d0128dd69790
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Items_SelectPay()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:37 IST" name="Items_SelectPay" finished-at="2025-04-03T19:26:41 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Items_Home" duration-ms="3790" status="PASS">
+        </test-method> <!-- TakeOut_AddCustomer -->
+        <test-method signature="TakeOut_AppliedLoyaltyPoint()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:04:06 IST" name="TakeOut_AppliedLoyaltyPoint" finished-at="2025-04-03T21:04:06 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@301ec38b depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@301ec38b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@301ec38b depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@301ec38b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Items_SelectPay -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:41 IST" name="tearDown" finished-at="2025-04-03T19:26:41 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- TakeOut_AppliedLoyaltyPoint -->
+        <test-method signature="TakeOut_Transaction()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:04:06 IST" name="TakeOut_Transaction" finished-at="2025-04-03T21:04:06 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@301ec38b depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@301ec38b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@301ec38b depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@301ec38b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_Transaction -->
+        <test-method signature="TakeOut_AddTip()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:04:06 IST" name="TakeOut_AddTip" finished-at="2025-04-03T21:04:06 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@301ec38b depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@301ec38b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@301ec38b depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@301ec38b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_AddTip -->
+        <test-method signature="TakeOut_Card_FinalWayPayment()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:04:06 IST" name="TakeOut_Card_FinalWayPayment" finished-at="2025-04-03T21:04:06 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_Card_FinalWayPayment() on instance Pays.posfinaltesting.TakeOutTest@301ec38b depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@301ec38b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Card_FinalWayPayment() on instance Pays.posfinaltesting.TakeOutTest@301ec38b depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@301ec38b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_Card_FinalWayPayment -->
+        <test-method signature="TakeOut_Card_Refund_SelectRefund()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:04:06 IST" name="TakeOut_Card_Refund_SelectRefund" finished-at="2025-04-03T21:04:06 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_Card_FinalWayPayment" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_Card_Refund_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@301ec38b depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Card_FinalWayPayment() on instance Pays.posfinaltesting.TakeOutTest@301ec38b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Card_Refund_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@301ec38b depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Card_FinalWayPayment() on instance Pays.posfinaltesting.TakeOutTest@301ec38b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_Card_Refund_SelectRefund -->
+        <test-method signature="TakeOut_Card_Refund_PrintReceipt()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@301ec38b]" started-at="2025-04-03T21:04:06 IST" name="TakeOut_Card_Refund_PrintReceipt" finished-at="2025-04-03T21:04:06 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_Card_Refund_SelectRefund" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_Card_Refund_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@301ec38b depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Card_Refund_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@301ec38b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Card_Refund_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@301ec38b depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Card_Refund_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@301ec38b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_Card_Refund_PrintReceipt -->
+      </class> <!-- Pays.posfinaltesting.TakeOutTest -->
+    </test> <!-- TakeOut_Card_Refund -->
+    <test started-at="2025-04-03T21:04:07 IST" name="TakeOut_Cash_ItemWiseRefund" finished-at="2025-04-03T21:06:36 IST" duration-ms="149297">
+      <class name="Pays.posfinaltesting.TakeOutTest">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:04:07 IST" name="ConfigureAppium" finished-at="2025-04-03T21:04:16 IST" duration-ms="8722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigureAppium -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:04:16 IST" name="Login" finished-at="2025-04-03T21:04:41 IST" duration-ms="25345" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Items_SelectPay status=SUCCESS method=CategoriesandItemsTest.Items_SelectPay()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_Setup()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:41 IST" name="setup" finished-at="2025-04-03T19:26:41 IST" duration-ms="17" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_Setup()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:04:41 IST" name="TakeOut_Setup" finished-at="2025-04-03T21:04:41 IST" duration-ms="230" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Items_Transaction()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:26:41 IST" name="Items_Transaction" finished-at="2025-04-03T19:27:09 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Items_SelectPay" duration-ms="28197" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Items_Transaction -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:09 IST" name="tearDown" finished-at="2025-04-03T19:27:11 IST" duration-ms="2014" status="PASS">
+        </test-method> <!-- TakeOut_Setup -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:04:41 IST" name="Login" finished-at="2025-04-03T21:04:41 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Items_Transaction status=SUCCESS method=CategoriesandItemsTest.Items_Transaction()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_SelectTakeout()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:11 IST" name="setup" finished-at="2025-04-03T19:27:11 IST" duration-ms="43" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_SelectTakeout()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:04:41 IST" name="TakeOut_SelectTakeout" finished-at="2025-04-03T21:04:51 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_Setup" duration-ms="9814" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="DeleteCategory_Select_Categories()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:11 IST" name="DeleteCategory_Select_Categories" finished-at="2025-04-03T19:27:23 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.Items_Transaction" duration-ms="12334" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteCategory_Select_Categories -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:23 IST" name="tearDown" finished-at="2025-04-03T19:27:23 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- TakeOut_SelectTakeout -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:04:51 IST" name="Login" finished-at="2025-04-03T21:04:51 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DeleteCategory_Select_Categories status=SUCCESS method=CategoriesandItemsTest.DeleteCategory_Select_Categories()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_ItemSelection()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:23 IST" name="setup" finished-at="2025-04-03T19:27:23 IST" duration-ms="18" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_ItemSelection()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:04:51 IST" name="TakeOut_ItemSelection" finished-at="2025-04-03T21:05:30 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_SelectTakeout" duration-ms="39307" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="DeleteCategory_DeleteCategory()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:23 IST" name="DeleteCategory_DeleteCategory" finished-at="2025-04-03T19:27:29 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.DeleteCategory_Select_Categories" duration-ms="5643" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteCategory_DeleteCategory -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:29 IST" name="tearDown" finished-at="2025-04-03T19:27:29 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- TakeOut_ItemSelection -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:05:30 IST" name="Login" finished-at="2025-04-03T21:05:30 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DeleteCategory_DeleteCategory status=SUCCESS method=CategoriesandItemsTest.DeleteCategory_DeleteCategory()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_AddManualItems()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:29 IST" name="setup" finished-at="2025-04-03T19:27:29 IST" duration-ms="20" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_AddManualItems()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:05:30 IST" name="TakeOut_AddManualItems" finished-at="2025-04-03T21:05:45 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_ItemSelection" duration-ms="14810" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="DeleteItem_ClickItem()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:29 IST" name="DeleteItem_ClickItem" finished-at="2025-04-03T19:27:29 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.DeleteCategory_DeleteCategory" duration-ms="168" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteItem_ClickItem -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:29 IST" name="tearDown" finished-at="2025-04-03T19:27:29 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- TakeOut_AddManualItems -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:05:45 IST" name="Login" finished-at="2025-04-03T21:05:45 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DeleteItem_ClickItem status=SUCCESS method=CategoriesandItemsTest.DeleteItem_ClickItem()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_UpdateItem()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:29 IST" name="setup" finished-at="2025-04-03T19:27:29 IST" duration-ms="22" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_UpdateItem()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:05:45 IST" name="TakeOut_UpdateItem" finished-at="2025-04-03T21:06:04 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AddManualItems" duration-ms="18717" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="DeleteItem_DeleteItems()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:27:29 IST" name="DeleteItem_DeleteItems" finished-at="2025-04-03T19:28:08 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.DeleteItem_ClickItem" duration-ms="38800" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteItem_DeleteItems -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:28:08 IST" name="tearDown" finished-at="2025-04-03T19:28:08 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- TakeOut_UpdateItem -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:04 IST" name="Login" finished-at="2025-04-03T21:06:04 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DeleteItem_DeleteItems status=SUCCESS method=CategoriesandItemsTest.DeleteItem_DeleteItems()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_RemoveItem()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:28:08 IST" name="setup" finished-at="2025-04-03T19:28:08 IST" duration-ms="24" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_RemoveItem()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:04 IST" name="TakeOut_RemoveItem" finished-at="2025-04-03T21:06:09 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_UpdateItem" duration-ms="5003" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="DeleteModifiers_ClickModifiers()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:28:08 IST" name="DeleteModifiers_ClickModifiers" finished-at="2025-04-03T19:28:08 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.DeleteItem_DeleteItems" duration-ms="238" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteModifiers_ClickModifiers -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:28:08 IST" name="tearDown" finished-at="2025-04-03T19:28:08 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- TakeOut_RemoveItem -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:09 IST" name="Login" finished-at="2025-04-03T21:06:09 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DeleteModifiers_ClickModifiers status=SUCCESS method=CategoriesandItemsTest.DeleteModifiers_ClickModifiers()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_SaveOrder()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:28:08 IST" name="setup" finished-at="2025-04-03T19:28:08 IST" duration-ms="17" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_SaveOrder()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:09 IST" name="TakeOut_SaveOrder" finished-at="2025-04-03T21:06:11 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_UpdateItem" duration-ms="1915" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="DeleteModifier_SelectModifier()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:28:08 IST" name="DeleteModifier_SelectModifier" finished-at="2025-04-03T19:28:13 IST" depends-on-methods="Pays.posfinaltesting.CategoriesandItemsTest.DeleteModifiers_ClickModifiers" duration-ms="4357" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteModifier_SelectModifier -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7]" started-at="2025-04-03T19:28:13 IST" name="tearDown" finished-at="2025-04-03T19:28:13 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- TakeOut_SaveOrder -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:11 IST" name="Login" finished-at="2025-04-03T21:06:11 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DeleteModifier_SelectModifier status=SUCCESS method=CategoriesandItemsTest.DeleteModifier_SelectModifier()[pri:0, instance:Pays.posfinaltesting.CategoriesandItemsTest@363042d7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_CheckOrderType()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Pays.posfinaltesting.CategoriesandItemsTest -->
-    </test> <!-- Test -->
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_CheckOrderType()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:11 IST" name="TakeOut_CheckOrderType" finished-at="2025-04-03T21:06:16 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_SaveOrder" duration-ms="5446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_CheckOrderType -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:16 IST" name="Login" finished-at="2025-04-03T21:06:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.Takeout_UpdateOrder()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Takeout_UpdateOrder()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:16 IST" name="Takeout_UpdateOrder" finished-at="2025-04-03T21:06:19 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_CheckOrderType" duration-ms="2786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Takeout_UpdateOrder -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:19 IST" name="Login" finished-at="2025-04-03T21:06:19 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_AddOrderNote()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_AddOrderNote()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:19 IST" name="TakeOut_AddOrderNote" finished-at="2025-04-03T21:06:35 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.Takeout_UpdateOrder" duration-ms="16264" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //androidx.recyclerview.widget.RecyclerView[@resource-id='com.pays.pos:id/rvNotes']/androidx.appcompat.widget.LinearLayoutCompat[4]/androidx.appcompat.widget.LinearLayoutCompat (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //androidx.recyclerview.widget.RecyclerView[@resource-id='com.pays.pos:id/rvNotes']/androidx.appcompat.widget.LinearLayoutCompat[4]/androidx.appcompat.widget.LinearLayoutCompat (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at Pays.posfinaltesting.actions.SetupClass.SelectONote(SetupClass.java:624)
+at Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote(TakeOutTest.java:187)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [cf1f5a2f-a70e-45e3-b3d2-c1bb804cd444, findElement {using=xpath, value=//androidx.recyclerview.widget.RecyclerView[@resource-id='com.pays.pos:id/rvNotes']/androidx.appcompat.widget.LinearLayoutCompat[4]/androidx.appcompat.widget.LinearLayoutCompat}]
+Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: E:\EclipseWorkspace\posfina..., appActivity: com.pays.pos.ui.activities...., appPackage: com.pays.pos, autoGrantPermissions: true, automationName: UIAutomator2, deviceName: LANDI C20pro, newCommandTimeout: 10000, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 2560x1600, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 10000, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 48, appium:takesScreenshot: true, appium:viewportRect: {height: 1552, left: 0, top: 48, width: 2560}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: cf1f5a2f-a70e-45e3-b3d2-c1bb804cd444
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_AddOrderNote -->
+        <test-method signature="TakeOut_AddDiscount()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:36 IST" name="TakeOut_AddDiscount" finished-at="2025-04-03T21:06:36 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddDiscount() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddDiscount() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_AddDiscount -->
+        <test-method signature="TakeOut_ChangeOrderType()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:36 IST" name="TakeOut_ChangeOrderType" finished-at="2025-04-03T21:06:36 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_ChangeOrderType -->
+        <test-method signature="TakeOut_AddCustomer()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:36 IST" name="TakeOut_AddCustomer" finished-at="2025-04-03T21:06:36 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_AddCustomer -->
+        <test-method signature="TakeOut_AppliedLoyaltyPoint()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:36 IST" name="TakeOut_AppliedLoyaltyPoint" finished-at="2025-04-03T21:06:36 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_AppliedLoyaltyPoint -->
+        <test-method signature="TakeOut_Transaction()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:36 IST" name="TakeOut_Transaction" finished-at="2025-04-03T21:06:36 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_Transaction -->
+        <test-method signature="TakeOut_AddTip()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:36 IST" name="TakeOut_AddTip" finished-at="2025-04-03T21:06:36 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_AddTip -->
+        <test-method signature="TakeOut_Cash_RefundItemWise_Payment()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:36 IST" name="TakeOut_Cash_RefundItemWise_Payment" finished-at="2025-04-03T21:06:36 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_Payment() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_Payment() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_Cash_RefundItemWise_Payment -->
+        <test-method signature="TakeOut_Cash_RefundItemWise_SelectRefund()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:36 IST" name="TakeOut_Cash_RefundItemWise_SelectRefund" finished-at="2025-04-03T21:06:36 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_Payment" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_Payment() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_Payment() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_Cash_RefundItemWise_SelectRefund -->
+        <test-method signature="TakeOut_Cash_RefundItemWise_PrintReceipt()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:36 IST" name="TakeOut_Cash_RefundItemWise_PrintReceipt" finished-at="2025-04-03T21:06:36 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_SelectRefund" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_Cash_RefundItemWise_PrintReceipt -->
+        <test-method signature="TakeOut_Cash_RefundItemWise_CheckCashLog()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@1d2bd371]" started-at="2025-04-03T21:06:36 IST" name="TakeOut_Cash_RefundItemWise_CheckCashLog" finished-at="2025-04-03T21:06:36 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_PrintReceipt" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_CheckCashLog() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_CheckCashLog() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_Cash_RefundItemWise_CheckCashLog -->
+      </class> <!-- Pays.posfinaltesting.TakeOutTest -->
+    </test> <!-- TakeOut_Cash_ItemWiseRefund -->
+    <test started-at="2025-04-03T21:06:36 IST" name="TakeOut_Cash_Refund" finished-at="2025-04-03T21:08:44 IST" duration-ms="127962">
+      <class name="Pays.posfinaltesting.TakeOutTest">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:06:36 IST" name="ConfigureAppium" finished-at="2025-04-03T21:06:46 IST" duration-ms="9206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigureAppium -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:06:46 IST" name="Login" finished-at="2025-04-03T21:07:11 IST" duration-ms="25418" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_Setup()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_Setup()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:07:11 IST" name="TakeOut_Setup" finished-at="2025-04-03T21:07:11 IST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_Setup -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:07:11 IST" name="Login" finished-at="2025-04-03T21:07:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_SelectTakeout()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_SelectTakeout()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:07:11 IST" name="TakeOut_SelectTakeout" finished-at="2025-04-03T21:07:21 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_Setup" duration-ms="10215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_SelectTakeout -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:07:21 IST" name="Login" finished-at="2025-04-03T21:07:21 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_ItemSelection()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_ItemSelection()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:07:21 IST" name="TakeOut_ItemSelection" finished-at="2025-04-03T21:07:36 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_SelectTakeout" duration-ms="14924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_ItemSelection -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:07:36 IST" name="Login" finished-at="2025-04-03T21:07:36 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_AddManualItems()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_AddManualItems()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:07:36 IST" name="TakeOut_AddManualItems" finished-at="2025-04-03T21:07:52 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_ItemSelection" duration-ms="15477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_AddManualItems -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:07:52 IST" name="Login" finished-at="2025-04-03T21:07:52 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_UpdateItem()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_UpdateItem()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:07:52 IST" name="TakeOut_UpdateItem" finished-at="2025-04-03T21:08:11 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AddManualItems" duration-ms="19447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_UpdateItem -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:11 IST" name="Login" finished-at="2025-04-03T21:08:11 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_RemoveItem()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_RemoveItem()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:11 IST" name="TakeOut_RemoveItem" finished-at="2025-04-03T21:08:17 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_UpdateItem" duration-ms="5302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_RemoveItem -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:17 IST" name="Login" finished-at="2025-04-03T21:08:17 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_SaveOrder()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_SaveOrder()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:17 IST" name="TakeOut_SaveOrder" finished-at="2025-04-03T21:08:19 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_UpdateItem" duration-ms="2598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_SaveOrder -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:19 IST" name="Login" finished-at="2025-04-03T21:08:19 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_CheckOrderType()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_CheckOrderType()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:19 IST" name="TakeOut_CheckOrderType" finished-at="2025-04-03T21:08:25 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_SaveOrder" duration-ms="5788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_CheckOrderType -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:25 IST" name="Login" finished-at="2025-04-03T21:08:25 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.Takeout_UpdateOrder()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Takeout_UpdateOrder()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:25 IST" name="Takeout_UpdateOrder" finished-at="2025-04-03T21:08:28 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_CheckOrderType" duration-ms="2684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Takeout_UpdateOrder -->
+        <test-method is-config="true" signature="Login(org.testng.ITestResult)[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:28 IST" name="Login" finished-at="2025-04-03T21:08:28 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TakeOutTest.TakeOut_AddOrderNote()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="TakeOut_AddOrderNote()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:28 IST" name="TakeOut_AddOrderNote" finished-at="2025-04-03T21:08:44 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.Takeout_UpdateOrder" duration-ms="15866" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //androidx.recyclerview.widget.RecyclerView[@resource-id='com.pays.pos:id/rvNotes']/androidx.appcompat.widget.LinearLayoutCompat[4]/androidx.appcompat.widget.LinearLayoutCompat (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //androidx.recyclerview.widget.RecyclerView[@resource-id='com.pays.pos:id/rvNotes']/androidx.appcompat.widget.LinearLayoutCompat[4]/androidx.appcompat.widget.LinearLayoutCompat (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at Pays.posfinaltesting.actions.SetupClass.SelectONote(SetupClass.java:624)
+at Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote(TakeOutTest.java:187)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [a1aed8b6-b698-4b02-8fad-a44db789504a, findElement {using=xpath, value=//androidx.recyclerview.widget.RecyclerView[@resource-id='com.pays.pos:id/rvNotes']/androidx.appcompat.widget.LinearLayoutCompat[4]/androidx.appcompat.widget.LinearLayoutCompat}]
+Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: E:\EclipseWorkspace\posfina..., appActivity: com.pays.pos.ui.activities...., appPackage: com.pays.pos, autoGrantPermissions: true, automationName: UIAutomator2, deviceName: LANDI C20pro, newCommandTimeout: 10000, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 2560x1600, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 10000, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 48, appium:takesScreenshot: true, appium:viewportRect: {height: 1552, left: 0, top: 48, width: 2560}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: a1aed8b6-b698-4b02-8fad-a44db789504a
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_AddOrderNote -->
+        <test-method signature="TakeOut_AddDiscount()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:44 IST" name="TakeOut_AddDiscount" finished-at="2025-04-03T21:08:44 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddDiscount() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddDiscount() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_AddDiscount -->
+        <test-method signature="TakeOut_ChangeOrderType()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:44 IST" name="TakeOut_ChangeOrderType" finished-at="2025-04-03T21:08:44 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_ChangeOrderType -->
+        <test-method signature="TakeOut_AddCustomer()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:44 IST" name="TakeOut_AddCustomer" finished-at="2025-04-03T21:08:44 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_AddCustomer -->
+        <test-method signature="TakeOut_AppliedLoyaltyPoint()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:44 IST" name="TakeOut_AppliedLoyaltyPoint" finished-at="2025-04-03T21:08:44 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_AppliedLoyaltyPoint -->
+        <test-method signature="TakeOut_Transaction()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:44 IST" name="TakeOut_Transaction" finished-at="2025-04-03T21:08:44 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_Transaction -->
+        <test-method signature="TakeOut_AddTip()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:44 IST" name="TakeOut_AddTip" finished-at="2025-04-03T21:08:44 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_AddTip -->
+        <test-method signature="TakeOut_Cash_FullRefund_Payment()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:44 IST" name="TakeOut_Cash_FullRefund_Payment" finished-at="2025-04-03T21:08:44 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_FullRefund_Payment() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_FullRefund_Payment() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_Cash_FullRefund_Payment -->
+        <test-method signature="TakeOut_Cash_FullRefund_SelectRefund()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:44 IST" name="TakeOut_Cash_FullRefund_SelectRefund" finished-at="2025-04-03T21:08:44 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_FullRefund_Payment" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_FullRefund_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_FullRefund_Payment() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_FullRefund_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_FullRefund_Payment() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_Cash_FullRefund_SelectRefund -->
+        <test-method signature="TakeOut_Cash_FullRefund_PrintReceipt()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:44 IST" name="TakeOut_Cash_FullRefund_PrintReceipt" finished-at="2025-04-03T21:08:44 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_FullRefund_SelectRefund" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_FullRefund_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_FullRefund_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_FullRefund_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_FullRefund_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_Cash_FullRefund_PrintReceipt -->
+        <test-method signature="TakeOut_Cash_FullRefund_CheckCashLog()[pri:0, instance:Pays.posfinaltesting.TakeOutTest@65fe9e33]" started-at="2025-04-03T21:08:44 IST" name="TakeOut_Cash_FullRefund_CheckCashLog" finished-at="2025-04-03T21:08:44 IST" depends-on-methods="Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_FullRefund_PrintReceipt" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_FullRefund_CheckCashLog() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_FullRefund_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_FullRefund_CheckCashLog() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_FullRefund_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@65fe9e33]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeOut_Cash_FullRefund_CheckCashLog -->
+      </class> <!-- Pays.posfinaltesting.TakeOutTest -->
+    </test> <!-- TakeOut_Cash_Refund -->
   </suite> <!-- Suite -->
 </testng-results>
