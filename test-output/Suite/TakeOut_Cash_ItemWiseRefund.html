@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TakeOut_Cash_ItemWiseRefund</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/20</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/10</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 20 21:33:58 IST 2025</td>
+<td>Started on:</td><td>Thu Apr 03 21:04:07 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (499 ms)</td>
+<tr><td>Total time:</td><td>149 seconds (149297 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,55 +76,51 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Pays.posfinaltesting.TakeOutTest.ConfigureAppium()'><b>ConfigureAppium</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\prati\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 2290080791 shell getprop ro.build.version.sdk&apos; exited with code 255&apos;; Command output: &lt;empty&gt; 
-Host info: host: &apos;PRATIK&apos;, ip: &apos;192.168.0.234&apos;
-Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:deviceName: LANDI C20pro, appium:newCommandTimeout: 10000, platformName: ANDROID}]}]
-Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:deviceName: LANDI C20pro, appium:newCommandTimeout: 10000, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:313)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:113)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at Pays.posfinaltesting.BaseTest.ConfigureAppium(BaseTest.java:54)
+<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote()'><b>TakeOut_AddOrderNote</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //androidx.recyclerview.widget.RecyclerView[@resource-id=&apos;com.pays.pos:id/rvNotes&apos;]/androidx.appcompat.widget.LinearLayoutCompat[4]/androidx.appcompat.widget.LinearLayoutCompat (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Pays.posfinaltesting.actions.SetupClass.SelectONote(SetupClass.java:624)
+	at Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote(TakeOutTest.java:187)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1428527783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1428527783'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\prati\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 2290080791 shell getprop ro.build.version.sdk&apos; exited with code 255&apos;; Command output: &lt;empty&gt; 
-Host info: host: &apos;PRATIK&apos;, ip: &apos;192.168.0.234&apos;
-Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:deviceName: LANDI C20pro, appium:newCommandTimeout: 10000, platformName: ANDROID}]}]
-Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:deviceName: LANDI C20pro, appium:newCommandTimeout: 10000, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
+Command: [cf1f5a2f-a70e-45e3-b3d2-c1bb804cd444, findElement {using=xpath, value=//androidx.recyclerview.widget.RecyclerView[@resource-id=&apos;com.pays.pos:id/rvNotes&apos;]/androidx.appcompat.widget.LinearLayoutCompat[4]/androidx.appcompat.widget.LinearLayoutCompat}]
+Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: E:\EclipseWorkspace\posfina..., appActivity: com.pays.pos.ui.activities...., appPackage: com.pays.pos, autoGrantPermissions: true, automationName: UIAutomator2, deviceName: LANDI C20pro, newCommandTimeout: 10000, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 2560x1600, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 10000, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 48, appium:takesScreenshot: true, appium:viewportRect: {height: 1552, left: 0, top: 48, width: 2560}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: cf1f5a2f-a70e-45e3-b3d2-c1bb804cd444
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:313)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:113)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at Pays.posfinaltesting.BaseTest.ConfigureAppium(BaseTest.java:54)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace63178138", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace63178138'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //androidx.recyclerview.widget.RecyclerView[@resource-id=&apos;com.pays.pos:id/rvNotes&apos;]/androidx.appcompat.widget.LinearLayoutCompat[4]/androidx.appcompat.widget.LinearLayoutCompat (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Pays.posfinaltesting.actions.SetupClass.SelectONote(SetupClass.java:624)
+	at Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote(TakeOutTest.java:187)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at org.testng.TestRunner.privateRun(TestRunner.java:739)
 	at org.testng.TestRunner.run(TestRunner.java:614)
@@ -141,12 +137,37 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [cf1f5a2f-a70e-45e3-b3d2-c1bb804cd444, findElement {using=xpath, value=//androidx.recyclerview.widget.RecyclerView[@resource-id=&apos;com.pays.pos:id/rvNotes&apos;]/androidx.appcompat.widget.LinearLayoutCompat[4]/androidx.appcompat.widget.LinearLayoutCompat}]
+Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: E:\EclipseWorkspace\posfina..., appActivity: com.pays.pos.ui.activities...., appPackage: com.pays.pos, autoGrantPermissions: true, automationName: UIAutomator2, deviceName: LANDI C20pro, newCommandTimeout: 10000, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 2560x1600, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 10000, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 48, appium:takesScreenshot: true, appium:viewportRect: {height: 1552, left: 0, top: 48, width: 2560}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: cf1f5a2f-a70e-45e3-b3d2-c1bb804cd444
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
 </pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
+<td>16</td>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -154,15 +175,50 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Pays.posfinaltesting.TakeOutTest.Login()'><b>Login</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
+<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_UpdateItem()'><b>TakeOut_UpdateItem</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
 <td></td>
-<td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
+<td>18</td>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
 <tr>
-<td title='Pays.posfinaltesting.TakeOutTest.tearDown()'><b>tearDown</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
+<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_AddManualItems()'><b>TakeOut_AddManualItems</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
+<td></td>
+<td>14</td>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
+<tr>
+<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_ItemSelection()'><b>TakeOut_ItemSelection</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
+<td></td>
+<td>39</td>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
+<tr>
+<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_SelectTakeout()'><b>TakeOut_SelectTakeout</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
+<td></td>
+<td>9</td>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
+<tr>
+<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_RemoveItem()'><b>TakeOut_RemoveItem</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
+<td></td>
+<td>5</td>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
+<tr>
+<td title='Pays.posfinaltesting.TakeOutTest.Takeout_UpdateOrder()'><b>Takeout_UpdateOrder</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
+<td></td>
+<td>2</td>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
+<tr>
+<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_Setup()'><b>TakeOut_Setup</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
 <td></td>
 <td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
+<tr>
+<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_SaveOrder()'><b>TakeOut_SaveOrder</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
+<td></td>
+<td>1</td>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
+<tr>
+<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_CheckOrderType()'><b>TakeOut_CheckOrderType</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
+<td></td>
+<td>5</td>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -173,13 +229,13 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_AddManualItems()'><b>TakeOut_AddManualItems</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddManualItems() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_ItemSelection() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint()'><b>TakeOut_AppliedLoyaltyPoint</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace678654833", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace678654833'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddManualItems() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_ItemSelection() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2130906226", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2130906226'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -201,165 +257,15 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_CheckOrderType()'><b>TakeOut_CheckOrderType</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_CheckOrderType() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_SaveOrder() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace82517097", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace82517097'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_CheckOrderType() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_SaveOrder() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_UpdateItem()'><b>TakeOut_UpdateItem</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_UpdateItem() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_AddManualItems() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1979860449", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1979860449'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_UpdateItem() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_AddManualItems() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_Payment()'><b>TakeOut_Cash_RefundItemWise_Payment</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_Payment() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace409393797", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace409393797'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_Payment() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType()'><b>TakeOut_ChangeOrderType</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace973604748", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace973604748'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_AddDiscount()'><b>TakeOut_AddDiscount</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddDiscount() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1149747394", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1149747394'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddDiscount() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
 <tr>
 <td title='Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction()'><b>TakeOut_Transaction</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace435034854", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace435034854'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace407976995", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace407976995'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -381,204 +287,15 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_SaveOrder()'><b>TakeOut_SaveOrder</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_SaveOrder() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_UpdateItem() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1878454236", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1878454236'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_SaveOrder() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_UpdateItem() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_Setup()'><b>TakeOut_Setup</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\prati\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 2290080791 shell getprop ro.build.version.sdk&apos; exited with code 255&apos;; Command output: &lt;empty&gt; 
-Host info: host: &apos;PRATIK&apos;, ip: &apos;192.168.0.234&apos;
-Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:deviceName: LANDI C20pro, appium:newCommandTimeout: 10000, platformName: ANDROID}]}]
-Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:deviceName: LANDI C20pro, appium:newCommandTimeout: 10000, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:313)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:113)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at Pays.posfinaltesting.BaseTest.ConfigureAppium(BaseTest.java:54)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace541248718", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace541248718'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\prati\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 2290080791 shell getprop ro.build.version.sdk&apos; exited with code 255&apos;; Command output: &lt;empty&gt; 
-Host info: host: &apos;PRATIK&apos;, ip: &apos;192.168.0.234&apos;
-Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:deviceName: LANDI C20pro, appium:newCommandTimeout: 10000, platformName: ANDROID}]}]
-Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: com.pays.pos.ui.activities...., appium:appPackage: com.pays.pos, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:deviceName: LANDI C20pro, appium:newCommandTimeout: 10000, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:313)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:113)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at Pays.posfinaltesting.BaseTest.ConfigureAppium(BaseTest.java:54)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_PrintReceipt()'><b>TakeOut_Cash_RefundItemWise_PrintReceipt</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace301205240", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace301205240'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_ItemSelection()'><b>TakeOut_ItemSelection</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_ItemSelection() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_SelectTakeout() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace942444738", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace942444738'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_ItemSelection() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_SelectTakeout() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
-<tr>
-<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote()'><b>TakeOut_AddOrderNote</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.Takeout_UpdateOrder() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace407241000", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace407241000'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.Takeout_UpdateOrder() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
 <tr>
 <td title='Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_CheckCashLog()'><b>TakeOut_Cash_RefundItemWise_CheckCashLog</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_CheckCashLog() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_CheckCashLog() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1647303553", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1647303553'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_CheckCashLog() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace228972001", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace228972001'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_CheckCashLog() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -600,15 +317,15 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
 <tr>
 <td title='Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip()'><b>TakeOut_AddTip</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace292856581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace292856581'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace216197799", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace216197799'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Transaction() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -630,15 +347,15 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
 <tr>
-<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_SelectRefund()'><b>TakeOut_Cash_RefundItemWise_SelectRefund</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_Payment() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_AddDiscount()'><b>TakeOut_AddDiscount</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddDiscount() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2015521846", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2015521846'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_Payment() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace628142870", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace628142870'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddDiscount() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -660,15 +377,15 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
 <tr>
-<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_SelectTakeout()'><b>TakeOut_SelectTakeout</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_SelectTakeout() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_Setup() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_Payment()'><b>TakeOut_Cash_RefundItemWise_Payment</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_Payment() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1579139754", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1579139754'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_SelectTakeout() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_Setup() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace809976993", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace809976993'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_Payment() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddTip() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -690,15 +407,15 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
 <tr>
 <td title='Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer()'><b>TakeOut_AddCustomer</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace704143329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace704143329'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace93241065", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace93241065'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -720,15 +437,15 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
 <tr>
-<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint()'><b>TakeOut_AppliedLoyaltyPoint</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_SelectRefund()'><b>TakeOut_Cash_RefundItemWise_SelectRefund</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_Payment() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace963573938", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace963573938'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_AppliedLoyaltyPoint() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_AddCustomer() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1746150957", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1746150957'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_Payment() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -750,15 +467,15 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
 <tr>
-<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_RemoveItem()'><b>TakeOut_RemoveItem</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_RemoveItem() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_UpdateItem() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType()'><b>TakeOut_ChangeOrderType</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace43368234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace43368234'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_RemoveItem() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_UpdateItem() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1975727624", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1975727624'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_ChangeOrderType() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_AddOrderNote() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -780,15 +497,15 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
 <tr>
-<td title='Pays.posfinaltesting.TakeOutTest.Takeout_UpdateOrder()'><b>Takeout_UpdateOrder</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
-<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.Takeout_UpdateOrder() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_CheckOrderType() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+<td title='Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_PrintReceipt()'><b>TakeOut_Cash_RefundItemWise_PrintReceipt</b><br>Test class: Pays.posfinaltesting.TakeOutTest</td>
+<td><div><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace721648892", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace721648892'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.Takeout_UpdateOrder() on instance Pays.posfinaltesting.TakeOutTest@3d97a632 depends on not successfully finished methods 
-[Pays.posfinaltesting.TakeOutTest.TakeOut_CheckOrderType() on instance Pays.posfinaltesting.TakeOutTest@3d97a632]
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1974062116", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1974062116'><pre>java.lang.Throwable: Method Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_PrintReceipt() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371 depends on not successfully finished methods 
+[Pays.posfinaltesting.TakeOutTest.TakeOut_Cash_RefundItemWise_SelectRefund() on instance Pays.posfinaltesting.TakeOutTest@1d2bd371]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -810,7 +527,7 @@ Capabilities {appium:app: E:\EclipseWorkspace\posfina..., appium:appActivity: co
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Pays.posfinaltesting.TakeOutTest@3d97a632</td></tr>
+<td>Pays.posfinaltesting.TakeOutTest@1d2bd371</td></tr>
 </table><p>
 </body>
 </html>

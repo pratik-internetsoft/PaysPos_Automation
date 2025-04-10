@@ -5,35 +5,89 @@
     <listener class-name="Pays.posfinaltesting.resources.Listeners"/>
     <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="TakeOut_Card_Refund(failed)">
     <classes>
-      <class name="Pays.posfinaltesting.CategoriesandItemsTest">
+      <class name="Pays.posfinaltesting.TakeOutTest">
         <methods>
-          <include name="Categories_SaveCategory"/>
-          <include name="setup"/>
-          <include name="DeleteItem_DeleteItems"/>
-          <include name="Modifiers_ClickModifiers"/>
-          <include name="Items_SetItem"/>
+          <include name="TakeOut_Card_Refund_PrintReceipt"/>
+          <include name="TakeOut_AddOrderNote"/>
+          <include name="TakeOut_ItemSelection"/>
+          <include name="TakeOut_AddTip"/>
           <include name="ConfigureAppium"/>
-          <include name="DeleteCategory_DeleteCategory"/>
-          <include name="Modifiers_ClickCreate"/>
-          <include name="Items_Home"/>
-          <include name="DeleteModifier_SelectModifier"/>
-          <include name="DeleteItem_ClickItem"/>
-          <include name="DeleteCategory_Select_Categories"/>
-          <include name="Categories_CheckIfCategoryIsAdded"/>
-          <include name="Items_AddItems"/>
+          <include name="TakeOut_SaveOrder"/>
+          <include name="TakeOut_Transaction"/>
+          <include name="TakeOut_AddCustomer"/>
+          <include name="TakeOut_AppliedLoyaltyPoint"/>
+          <include name="TakeOut_SelectTakeout"/>
+          <include name="TakeOut_Setup"/>
+          <include name="Takeout_UpdateOrder"/>
+          <include name="TakeOut_Card_FinalWayPayment"/>
+          <include name="TakeOut_ChangeOrderType"/>
           <include name="Login"/>
-          <include name="tearDown"/>
-          <include name="DeleteModifiers_ClickModifiers"/>
-          <include name="Categories_CreateCategoriesClick"/>
-          <include name="Items_SelectPay"/>
-          <include name="Categories_SetCategoryname"/>
-          <include name="Modifiers_SetModifiersInfo"/>
-          <include name="Items_Transaction"/>
-          <include name="Categories_Select_Categories"/>
+          <include name="TakeOut_UpdateItem"/>
+          <include name="TakeOut_AddManualItems"/>
+          <include name="TakeOut_Card_Refund_SelectRefund"/>
+          <include name="TakeOut_CheckOrderType"/>
         </methods>
-      </class> <!-- Pays.posfinaltesting.CategoriesandItemsTest -->
+      </class> <!-- Pays.posfinaltesting.TakeOutTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TakeOut_Card_Refund(failed) -->
+  <test thread-count="5" name="TakeOut_Cash_ItemWiseRefund(failed)">
+    <classes>
+      <class name="Pays.posfinaltesting.TakeOutTest">
+        <methods>
+          <include name="TakeOut_AddOrderNote"/>
+          <include name="TakeOut_ItemSelection"/>
+          <include name="TakeOut_AddTip"/>
+          <include name="ConfigureAppium"/>
+          <include name="TakeOut_Transaction"/>
+          <include name="TakeOut_SaveOrder"/>
+          <include name="TakeOut_AppliedLoyaltyPoint"/>
+          <include name="TakeOut_AddCustomer"/>
+          <include name="TakeOut_AddDiscount"/>
+          <include name="TakeOut_SelectTakeout"/>
+          <include name="TakeOut_Cash_RefundItemWise_SelectRefund"/>
+          <include name="TakeOut_Setup"/>
+          <include name="Takeout_UpdateOrder"/>
+          <include name="TakeOut_Cash_RefundItemWise_Payment"/>
+          <include name="TakeOut_ChangeOrderType"/>
+          <include name="Login"/>
+          <include name="TakeOut_UpdateItem"/>
+          <include name="TakeOut_AddManualItems"/>
+          <include name="TakeOut_Cash_RefundItemWise_CheckCashLog"/>
+          <include name="TakeOut_CheckOrderType"/>
+          <include name="TakeOut_Cash_RefundItemWise_PrintReceipt"/>
+        </methods>
+      </class> <!-- Pays.posfinaltesting.TakeOutTest -->
+    </classes>
+  </test> <!-- TakeOut_Cash_ItemWiseRefund(failed) -->
+  <test thread-count="5" name="TakeOut_Cash_Refund(failed)">
+    <classes>
+      <class name="Pays.posfinaltesting.TakeOutTest">
+        <methods>
+          <include name="TakeOut_AddOrderNote"/>
+          <include name="TakeOut_Cash_FullRefund_CheckCashLog"/>
+          <include name="TakeOut_ItemSelection"/>
+          <include name="TakeOut_AddTip"/>
+          <include name="ConfigureAppium"/>
+          <include name="TakeOut_SaveOrder"/>
+          <include name="TakeOut_Transaction"/>
+          <include name="TakeOut_Cash_FullRefund_PrintReceipt"/>
+          <include name="TakeOut_AddCustomer"/>
+          <include name="TakeOut_AddDiscount"/>
+          <include name="TakeOut_AppliedLoyaltyPoint"/>
+          <include name="TakeOut_SelectTakeout"/>
+          <include name="TakeOut_Setup"/>
+          <include name="Takeout_UpdateOrder"/>
+          <include name="TakeOut_ChangeOrderType"/>
+          <include name="TakeOut_Cash_FullRefund_Payment"/>
+          <include name="TakeOut_UpdateItem"/>
+          <include name="Login"/>
+          <include name="TakeOut_Cash_FullRefund_SelectRefund"/>
+          <include name="TakeOut_AddManualItems"/>
+          <include name="TakeOut_CheckOrderType"/>
+        </methods>
+      </class> <!-- Pays.posfinaltesting.TakeOutTest -->
+    </classes>
+  </test> <!-- TakeOut_Cash_Refund(failed) -->
 </suite> <!-- Failed suite [Suite] -->
